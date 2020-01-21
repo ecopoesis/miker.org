@@ -1,0 +1,28 @@
+{{ $imgname := .Get "src" }}
+{{ $command := .Get "cmd" }}
+{{ $options := .Get "opt" }}
+{{ $float := .Get "float" }}
+{{ $caption := .Get "caption" }}
+{{ with .Site.GetPage "section" "media" }}
+  {{ $original := .Resources.GetMatch $imgname }}
+  {{ if eq $command "Fit"}}
+    {{ .Scratch.Set "image" ($original.Fit $options) }}
+  {{ else if eq $command "Resize"}}
+    {{ .Scratch.Set "image" ($original.Resize $options) }}
+  {{ else if eq $command "Fill"}}
+    {{ .Scratch.Set "image" ($original.Fill $options) }}
+  {{ else }}
+    {{ errorf "Invalid image processing command: Must be one of Fit, Fill or Resize."}}
+  {{ end }}
+  {{ $image := .Scratch.Get "image" }}
+  <figure style="{{ with $float }}float: {{.}};{{end}}">
+  	<img
+      src="{{ $image.RelPermalink }}"
+      width="{{ $image.Width }}"
+      height="{{ $image.Height }}"
+    >
+  	{{ with $caption }}
+      <figcaption><center><small>{{.}}</small></center></figcaption>
+    {{ end }}
+  </figure>
+{{ end }}

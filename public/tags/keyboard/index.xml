@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>keyboard on miker.org</title>
+    <link>http://miker.org/tags/keyboard/</link>
+    <description>Recent content in keyboard on miker.org</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 18 Feb 2019 23:07:37 +0000</lastBuildDate>
+    
+	<atom:link href="http://miker.org/tags/keyboard/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Building a better keyboard</title>
+      <link>http://miker.org/2019/02/building-a-better-keyboard/</link>
+      <pubDate>Mon, 18 Feb 2019 23:07:37 +0000</pubDate>
+      
+      <guid>http://miker.org/2019/02/building-a-better-keyboard/</guid>
+      <description>I wanted a better keyboard but my plea to the industry had no effect. Since no one would make one for me I built the keyboard myself. My main goals were:
+ Standard split-QWERTY layout mirroring the Microsoft Natural Keyboards * No number pad * High quality mechanical switches * Bluetooth and USB-C connections * Plug and play (no-solder) microcontroller replacement  Layout Building a keyboard naturally starts with designing the key layout.</description>
+    </item>
+    
+    <item>
+      <title>I Want A Better Keyboard</title>
+      <link>http://miker.org/2013/08/i-want-a-better-keyboard/</link>
+      <pubDate>Wed, 28 Aug 2013 15:25:13 +0000</pubDate>
+      
+      <guid>http://miker.org/2013/08/i-want-a-better-keyboard/</guid>
+      <description>Over on Hacker News, there is a discussion about Atwood&#39;s new keyboard. It looks nice, but it&#39;s not my ultimate keyboard. So bored rich people out there, build me a better keyboard.
+First, it needs to be ergonomic. Microsoft has pretty much perfected this, so let&#39;s start by copying their natural keyboard design. The basic wave shape and key layout of the current natural keyboards is great, especially since they fixed the layout of the navigation (insert/delete) cluster.</description>
+    </item>
+    
+  </channel>
+</rss>
