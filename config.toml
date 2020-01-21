@@ -1,0 +1,4 @@
+baseURL = "http://miker.org/"
+languageCode = "en-us"
+title = "miker.org"
+theme = "mainroad"
