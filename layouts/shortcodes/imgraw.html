@@ -1,0 +1,21 @@
+{{ $imgname := .Get "src" }}
+{{ $float := .Get "float" }}
+{{ $caption := .Get "caption" }}
+{{ $link := .Get "link" }}
+{{ with .Site.GetPage "section" "media" }}
+  {{ $original := .Resources.GetMatch $imgname }}
+  <a href="{{ with $link }} {{.}} {{ else }} {{ $original.RelPermalink }} {{ end }}">
+    <figure style="
+      {{ with $float }} width: 33% {{ else }} width: 100%; {{ end }};
+      height: auto;
+      padding: 5px 15px;
+      {{ with $float }}float: {{.}};{{end}}"
+    >
+  	<img
+      src="{{ $original.RelPermalink }}">
+    	{{ with $caption }}
+        <figcaption class="caption">{{.}}</figcaption>
+      {{ end }}
+    </figure>
+  </a>
+{{ end }}

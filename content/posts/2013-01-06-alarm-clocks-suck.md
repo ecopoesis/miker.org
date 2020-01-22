@@ -8,7 +8,7 @@ tags:
 - alarm clock
 ---
 
-{{< img src="sony-alarm-clock.jpg" cmd="Resize" opt="250x jpg" float="right" caption="Crappy Sony Alarm Clock">}}
+{{< img src="sony-alarm-clock.jpg" float="right" caption="Crappy Sony Alarm Clock">}}
 All current alarm clocks suck. Go look at Amazon and see what I mean. The best appear to be the Sony designs, which look unchanged from mid-90s. Piles of buttons, no auto-setting of time, no modern technology. If you want something built this decade, the best bet is the iHome crap. I'm sure you've seen these: the look like they're designed by a blind man, they only support iPhones and iPods, and still aren't all that high-tech.
 
 Given the sorry state of alarm clocks, I've decided that if I want a good one, I'll have to build my own. Thankfully, the great wide world of open-source hardware makes that possible.

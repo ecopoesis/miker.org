@@ -12,7 +12,7 @@ tags:
 
 I've spent the last several days unsuccessfully trying to get the [ST7565](http://www.adafruit.com/products/250) to work with the [Arduino Due](http://arduino.cc/en/Main/ArduinoBoardDue). I've been trying to port [ladyada's ST7565 library](https://github.com/adafruit/ST7565-LCD) to the SAM core without much luck.
 
-{{< img src="st7565-uno.jpg" cmd="Resize" opt="250x jpg" float="right">}}
+{{< img src="st7565-uno.jpg" float="right">}}
 Using the ST7565 with Uno and the library works with no issues, as would be expected, so I didn't fuck up soldering or anything easy to diagnose like that.
 
 Getting the code to run on the Due is not as easy. Changes I had to make to get the code to compile where:
@@ -28,7 +28,7 @@ I've also wired the ST7565 directly to the Due, instead of level shifting it thr
 
 {{< clear >}}
 
-{{< img src="st7565-due.jpg" cmd="Resize" opt="250x jpg" float="left">}}
+{{< img src="st7565-due.jpg" float="left">}}
 Of course, this doesn't work and I'm note sure why. My guess is the speed of the Due is messing with things, but honestly I'm not sure where to even start with debugging this.
 
 {{< clear >}}

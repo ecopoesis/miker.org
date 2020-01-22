@@ -5,7 +5,7 @@ theme = "mainroad"
 paginate = "7"
 
 [permalinks]
-  posts = "/:year/:month/:slug/"
+  posts = "/:slug/"
 
 [imaging]
 resampleFilter = "Lanczos"

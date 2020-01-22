@@ -12,7 +12,7 @@ tags:
 - replicator 2x
 ---
 
-{{< img src="first-print.jpg" cmd="Resize" opt="250x jpg" float="right" caption="First print on the Replicator 2X" >}}
+{{< img src="first-print.jpg" float="right" caption="First print on the Replicator 2X" >}}
 After a long wait, my MakerBot Replicator 2X was finally shipped and came in. I’ve wanted a 3D printer for a long time (going back to the Cupcake days) and only this year was able to convince my wife that we “needed” one.
 
 Two problems were apparent right away: no cover and no magnetic latch on the front door.  Both of these are vital for keeping warm air around ABS, and keeping cats out in progress prints. For now, I’ll just keep the printer in a closed off room, which solves the cat problem.
