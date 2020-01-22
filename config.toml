@@ -1,4 +1,4 @@
-baseURL = "https://ecopoesis.github.io/miker.org/"
+baseURL = "https://miker.org/"
 languageCode = "en-us"
 title = "miker.org"
 theme = "mainroad"
