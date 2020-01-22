@@ -6,6 +6,9 @@ then
     exit 1;
 fi
 
+echo "Pushing to GitHub"
+git push
+
 echo "Deleting old publication"
 rm -rf public
 mkdir public
