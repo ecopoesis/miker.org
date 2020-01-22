@@ -1,0 +1,25 @@
+body {
+  background: #4F7CAC;
+  color: #02020A;
+  font-family: Helvetica, "Open Sans", Arial, sans-serif;
+}
+
+.widget-search__form {
+  background: #4F7CAC;
+}
+
+.sidebar {
+  background: #e3ebef;
+}
+
+.btn {
+  background: #4F7CAC;
+}
+
+.logo {
+  background: #D8DDEF;
+}
+
+.logo__tagline {
+  border-top: 1px solid #3423A6;
+}

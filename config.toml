@@ -18,6 +18,8 @@ paginate = "7"
   dateformat = "2006-01-02" # Change the format of dates
   post_meta = ["date"] # Order of post meta information
   mainSections = ["posts"]
+  highlightColor = "#3423A6"
+  customCSS = ["css/custom.css"]
 
 [Params.sidebar]
   home = "right" # Configure layout for home page
