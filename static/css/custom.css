@@ -41,6 +41,7 @@ body {
 .list__thumbnail {
   float: right;
   padding: 0px 15px;
+  max-width: 50%;
 }
 
 .widget {
