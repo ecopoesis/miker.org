@@ -42,3 +42,13 @@ body {
   float: right;
   padding: 0px 15px;
 }
+
+.widget {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.widget-search {
+  margin-left: 0px;
+  margin-right: 0px;
+}

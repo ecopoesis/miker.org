@@ -11,6 +11,19 @@ paginate = "7"
 resampleFilter = "Lanczos"
 quality = 85
 
+[menu]
+  [[menu.side]]
+    identifier = "resume"
+    name = "Resume"
+    url = "Mike Roberts Resume.pdf"
+    weight = 1
+
+  [[menu.side]]
+    identifier = "nightmare-green"
+    name = "NIGHTMARE GREEN"
+    url = "http://nightmare-green.com"
+    weight = 2
+
 [Author]
   name = "Mike Roberts"
 
@@ -31,7 +44,7 @@ quality = 85
   list = "right"  # Configure layout for list pages
   single = "right" # Configure layout for single pages
   # Enable widgets in given order
-  widgets = ["search", "recent", "categories", "taglist", "social", "languages"]
+  widgets = ["search", "sidemenu", "recent", "categories", "taglist", "social", "languages"]
 
 [Params.widgets]
   recent_num = 3 # Set the number of articles in the "Recent articles" widget
