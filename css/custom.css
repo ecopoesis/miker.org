@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:700&display=swap');
+
+body {
+  background: #4F7CAC;
+  color: #02020A;
+  font-family: Helvetica, "Open Sans", Arial, sans-serif;
+}
+
+.widget-search__form {
+  background: #4F7CAC;
+}
+
+.sidebar {
+  background: #e3ebef;
+}
+
+.btn {
+  background: #4F7CAC;
+}
+
+.logo {
+  background: #D8DDEF;
+  font-family: 'Comfortaa', Helvetica, "Open Sans", Arial, sans-serif;
+}
+
+.logo__tagline {
+  border-top: 1px solid #3423A6;
+}
+
+.logo__link {
+  text-transform: none;
+  text-align: center;
+}
+
+.caption {
+  font-size: x-small;
+  font-style: italic;
+  text-align: center;
+}
