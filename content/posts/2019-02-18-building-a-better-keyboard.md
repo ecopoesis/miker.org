@@ -11,29 +11,15 @@ tags:
 - vim
 ---
 
-
-
-
 I [wanted a better keyboard](http://miker.org/i-want-a-better-keyboard/) but my plea to the industry had no effect. Since no one would make one for me I built the keyboard myself. My main goals were:  
 
-
-
-
-
-
-  * Standard split-QWERTY layout mirroring the Microsoft Natural Keyboards  * No number pad  * High quality mechanical switches  * Bluetooth and USB-C connections  * Plug and play (no-solder) microcontroller replacement
-
-
-
-
+* Standard split-QWERTY layout mirroring the Microsoft Natural Keyboards  
+* No number pad  
+* High quality mechanical switches  
+* Bluetooth and USB-C connections  
+* Plug and play (no-solder) microcontroller replacement
 
 ### Layout
-
-
-
-
-
-
 
 Building a keyboard naturally starts with designing the key layout. I used the wonderful [Keyboard Layout Editor](http://www.keyboard-layout-editor.com) to build a tweaked version of the classic Microsoft Natural Keyboard layout.
 

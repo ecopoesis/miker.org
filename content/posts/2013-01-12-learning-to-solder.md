@@ -16,13 +16,14 @@ Problem 1: I don't have a soldering iron. Some quick Googling show that there ar
 
 I generally like to buy the best tools I can get. Cheap tools are just frustrating, I've found it better to spend a little more up front to have the pleasure of using a well designed, well made product. Hell, that's why I'm building a my own alarm clock. So rather then cheap out, I got the FX-888. I also read through [adafruit's excellent guide to soldering](http://learn.adafruit.com/adafruit-guide-excellent-soldering) which was as excellent as described. It convinced me to get their [Helping Third Hand Magnifier](http://www.adafruit.com/products/291) which was extremely helpful in seeing little things. I also picked up a [clip on LED light](http://www.amazon.com/gp/product/1933622717/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&tag=mikerorg-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=1933622717) from Amazon since my workspace is a little dim.
 
-[![](http://miker.org/wp-content/uploads/2013/01/IMG_0338-300x225.jpg)
-](http://miker.org/wp-content/uploads/2013/01/IMG_0338.jpg)
+{{< img src="helping-hand.jpg" cmd="Resize" opt="250x jpg" float="right">}}
 That done, it was down to soldering. Here's what my soldering station looks like all set up, with me about halfway through attaching all the wires to the ST7565. The FX-888 worked like a champ: it heats up quickly, the iron is light weight and its handle doesn't get hot and even a newbie like me can us it.
 
+{{< clear >}}
 
-
-[![](http://miker.org/wp-content/uploads/2013/01/IMG_0339-e1358805927526-300x152.jpg)
-](http://miker.org/wp-content/uploads/2013/01/IMG_0339-e1358805927526.jpg)Here's the final product. I'm not completely happy with it: There's defiantly too much solder on some of the connections, but according to my multimeter the pins on the wires are connected to the solder pads on the back of the LCD's PCB, so it's obviously good enough.
+{{< img src="soldering.jpg" cmd="Resize" opt="250x jpg" float="left">}}
+Here's the final product. I'm not completely happy with it: There's defiantly too much solder on some of the connections, but according to my multimeter the pins on the wires are connected to the solder pads on the back of the LCD's PCB, so it's obviously good enough.
 
 Now to plug this in to an Arduino and make it work.
+
+{{< clear >}}
