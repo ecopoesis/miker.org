@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Building a better keyboard - miker.org</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+	
+	
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="/miker.org/css/style.css">
+	<link rel="stylesheet" href="/miker.org/css/custom.css">
+	<link rel="shortcut icon" href="/miker.org/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container">
+		<div class="logo">
+			<a class="logo__link" href="/miker.org/" title="miker.org" rel="home">
+				<div class="logo__title">miker.org</div>
+				<div class="logo__tagline">engineering the future</div>
+			</a>
+		</div>
+		<div class="divider"></div>
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Building a better keyboard</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg>
+	<time class="meta__text" datetime="2019-02-18T23:07:37">2019-02-18</time>
+</div>
+</div>
+		</header>
+		<figure class="post__thumbnail">
+			<img src="/miker.org/media/top-view.jpg" alt="Building a better keyboard">
+		</figure><div class="content post__content clearfix">
+			<p>I <a href="http://miker.org/i-want-a-better-keyboard/">wanted a better keyboard</a> but my plea to the industry had no effect. Since no one would make one for me I built the keyboard myself. My main goals were:</p>
+<ul>
+<li>Standard split-QWERTY layout mirroring the Microsoft Natural Keyboards</li>
+<li>No number pad</li>
+<li>High quality mechanical switches</li>
+<li>Bluetooth and USB-C connections</li>
+<li>Plug and play (no-solder) microcontroller replacement</li>
+</ul>
+<h3 id="layout">Layout</h3>
+<p>Building a keyboard naturally starts with designing the key layout. I used the wonderful <a href="http://www.keyboard-layout-editor.com">Keyboard Layout Editor</a> to build a tweaked version of the classic Microsoft Natural Keyboard layout.</p>
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <a href=" http://www.keyboard-layout-editor.com/##@_backcolor=%236b6767%3B&amp;@_x:0.5&amp;c=%23857eb1&amp;p=R1&amp;sm=cherry&amp;sb=cherry&amp;st=MX1A-G1Nx&amp;a:7&amp;w:1.75%3B&amp;=esc&amp;_x:0.5&amp;c=%23c4c8c5%3B&amp;=F1&amp;=F2&amp;=F3&amp;=F4&amp;_x:3%3B&amp;=F5&amp;=F6&amp;=F7&amp;=F8&amp;_x:0.25%3B&amp;=F9&amp;=F10&amp;=F11&amp;=F12&amp;_x:0.25&amp;c=%23857eb1%3B&amp;=%3Ci%20class%2F=%27kb%20kb-Multimedia-Mute-1%27%3E%3C%2F%2Fi%3E&amp;=%3Ci%20class%2F=%27kb%20kb-Multimedia-Volume-Down-2%27%3E%3C%2F%2Fi%3E&amp;=%3Ci%20class%2F=%27kb%20kb-Multimedia-Volume-Up-1%27%3E%3C%2F%2Fi%3E%3B&amp;@_y:0.25&amp;c=%23929390&amp;a:5%3B&amp;=~%0A%60&amp;_c=%23525554%3B&amp;=!%0A1&amp;=%2F@%0A2&amp;=%23%0A3&amp;=$%0A4&amp;=%25%0A5&amp;=%5E%0A6&amp;_x:2.5&amp;w:1.5%3B&amp;=%2F&amp;%0A7&amp;=*%0A8&amp;=%28%0A9&amp;=%29%0A0&amp;_c=%23929390%3B&amp;=%2F_%0A-&amp;=&#43;%0A%2F=&amp;_c=%2395bfe8&amp;a:4&amp;w:2%3B&amp;=%0A%0A%e2%8c%ab%0Adelete&amp;_x:0.25&amp;p=R2&amp;a:7%3B&amp;=insert&amp;_p=R1%3B&amp;=home&amp;_p=R3%3B&amp;=page%20up%3B&amp;@_p=R2&amp;a:4&amp;w:1.5%3B&amp;=%0Atab&amp;_c=%23525554&amp;a:7%3B&amp;=Q&amp;=W&amp;=E&amp;=R&amp;_w:1.5%3B&amp;=T&amp;_x:2.5%3B&amp;=Y&amp;=U&amp;=I&amp;=O&amp;=P&amp;_c=%23929390&amp;a:5%3B&amp;=%7B%0A%5B&amp;=%7D%0A%5D&amp;_w:1.5%3B&amp;=%7C%0A%5C&amp;_x:0.25&amp;c=%2395bfe8&amp;p=R1&amp;a:4%3B&amp;=%0A%0A%e2%8c%a6%0Adelete&amp;_p=R2&amp;a:7%3B&amp;=end&amp;_p=R4%3B&amp;=page%20down%3B&amp;@_p=R3&amp;a:4&amp;w:1.75&amp;l:true%3B&amp;=%e2%87%aa%0Acaps%20lock&amp;_c=%23525554&amp;a:7%3B&amp;=A&amp;=S&amp;=D&amp;_n:true%3B&amp;=F&amp;_w:1.25%3B&amp;=G&amp;_x:2.5&amp;w:1.25%3B&amp;=H&amp;_n:true%3B&amp;=J&amp;=K&amp;=L&amp;_c=%23929390&amp;a:5%3B&amp;=%2F:%0A%2F%3B&amp;=%22%0A%27&amp;_c=%2395bfe8&amp;a:4&amp;w:2.25%3B&amp;=%0A%0A%0Areturn%3B&amp;@_y:-0.5&amp;x:19.25&amp;p=R4&amp;a:7%3B&amp;=%e2%86%91%3B&amp;@_y:-0.5&amp;a:4&amp;w:2%3B&amp;=%e2%87%a7%0Ashift&amp;_c=%23525554&amp;a:7%3B&amp;=Z&amp;=X&amp;=C&amp;=V&amp;=B&amp;_x:2.5&amp;w:1.5%3B&amp;=N&amp;=M&amp;_c=%23929390&amp;a:5%3B&amp;=%3C%0A,&amp;=%3E%0A.&amp;=%3F%0A%2F%2F&amp;_c=%2395bfe8&amp;a:4&amp;w:2.75%3B&amp;=%0A%0A%e2%87%a7%0Ashift%3B&amp;@_y:-0.5&amp;x:18.25&amp;a:7%3B&amp;=%e2%86%90&amp;=%e2%86%93&amp;=%e2%86%92%3B&amp;@_y:-0.5&amp;a:4&amp;w:1.5%3B&amp;=%0A%0A%5E%0Acontrol&amp;_w:1.25%3B&amp;=%0A%0A%e2%8c%a5%0Aoption&amp;_w:1.5%3B&amp;=%0A%0A%e2%8c%98%0Acommand&amp;_a:7&amp;w:2.75%3B&amp;=&amp;_x:2.5&amp;w:2.75%3B&amp;=&amp;_a:4&amp;w:1.5%3B&amp;=%e2%8c%98%0Acommand&amp;_w:1.25%3B&amp;=%e2%8c%a5%0Aoption&amp;_w:1.5%3B&amp;=%5E%0Acontrol&amp;_a:7&amp;w:1.25%3B&amp;= ">
+    <figure style="
+       width: 100%; ;
+      height: auto;
+      padding: 5px 15px;
+      "
+    >
+  	<img
+      srcset="
+        /miker.org/media/layout_hu13b01341bebaa20b73e5ffd5c4b10e90_188038_100x0_resize_lanczos_2.png 100w,
+        /miker.org/media/layout_hu13b01341bebaa20b73e5ffd5c4b10e90_188038_200x0_resize_lanczos_2.png 200w,
+        /miker.org/media/layout_hu13b01341bebaa20b73e5ffd5c4b10e90_188038_500x0_resize_lanczos_2.png 500w,
+        /miker.org/media/layout_hu13b01341bebaa20b73e5ffd5c4b10e90_188038_800x0_resize_lanczos_2.png 800w,
+        /miker.org/media/layout_hu13b01341bebaa20b73e5ffd5c4b10e90_188038_1300x0_resize_lanczos_2.png 1300w,
+        /miker.org/media/layout_hu13b01341bebaa20b73e5ffd5c4b10e90_188038_2100x0_resize_lanczos_2.png 2100w,
+        /miker.org/media/layout.png 2342w
+      "
+      sizes="
+        
+          (min-width: 768px) calc(.333 * 100vm),
+          (max-width: 767px) 100vm,
+          100vm
+        
+      "
+      src="/miker.org/media/layout.png">
+    	
+        <figcaption class="caption">NEK Type A layout</figcaption>
+      
+    </figure>
+  </a>
+
+
+<p>The big changes I made were a larger escape key for ease of <code>vim</code> and dedicated volume control keys since those are the only media keys I have ever used. Sorry <a href="https://en.wikipedia.org/wiki/Microsoft_ergonomic_keyboards#Natural_Keyboard_Elite">Natural Keyboard Elite</a> diehards: I kept the classic inverted T. I also added a blank key below the right-shift for future expansion but mostly because the keyboard looked unbalanced without it.</p>
+<h3 id="case-design">Case design</h3>
+<p>Now that I had a layout I could design the case. Pretty early on I knew that I wanted the keyboard to be a CNCed aluminum case. I envisioned a &ldquo;bottom-up&rdquo; design: no exposed fasteners on the top but instead screwing up through a plate mount into the aluminum case with a rubber gasket for damping vibrations and locking the screws.</p>
+
+
+
+
+
+  
+  <a href=" /miker.org/media/stack-up.svg ">
+    <figure style="
+       width: 100%; ;
+      height: auto;
+      padding: 5px 15px;
+      "
+    >
+  	<img
+      src="/miker.org/media/stack-up.svg">
+    	
+        <figcaption class="caption">Physical keyboard stack</figcaption>
+      
+    </figure>
+  </a>
+
+
+<p>I used <a href="http://builder.swillkb.com/">swillkb's Plate and Case Builder</a> to generate <code>SVG</code> and <code>DXF</code> files from Keyboard Layout Editor files. I made the plates a bit larger than necessary so I would have flanges to screw through. To simplify life I planned on only screwing through the plate: the PCB would only be attached to the switches with solder.</p>
+<p>I first started building the case in <a href="http://www.openscad.org">OpenSCAD</a> because I used it for some simple 3D printed designs before. Though great for simple designs working with multiple rotated planes is difficult in OpenSCAD. Also as I discovered late in the process OpenSCAD only generates <code>STL</code> files which is fine for consumer 3D printers but not what is needed for CNC machines which generally want <code>STEP</code> files.</p>
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <a href=" https://github.com/ecopoesis/nek-type-a/blob/41905dad19aab60768523cb26840738a3dbb7f68/body.stl ">
+    <figure style="
+       width: 100%; ;
+      height: auto;
+      padding: 5px 15px;
+      "
+    >
+  	<img
+      srcset="
+        /miker.org/media/openscad-final_hu76ae3da26095a86782c3bd62d8c73568_90110_100x0_resize_lanczos_2.png 100w,
+        /miker.org/media/openscad-final_hu76ae3da26095a86782c3bd62d8c73568_90110_200x0_resize_lanczos_2.png 200w,
+        /miker.org/media/openscad-final_hu76ae3da26095a86782c3bd62d8c73568_90110_500x0_resize_lanczos_2.png 500w,
+        /miker.org/media/openscad-final_hu76ae3da26095a86782c3bd62d8c73568_90110_800x0_resize_lanczos_2.png 800w,
+        /miker.org/media/openscad-final_hu76ae3da26095a86782c3bd62d8c73568_90110_1300x0_resize_lanczos_2.png 1300w,
+        /miker.org/media/openscad-final_hu76ae3da26095a86782c3bd62d8c73568_90110_2100x0_resize_lanczos_2.png 2100w,
+        /miker.org/media/openscad-final.png 890w
+      "
+      sizes="
+        
+          (min-width: 768px) calc(.333 * 100vm),
+          (max-width: 767px) 100vm,
+          100vm
+        
+      "
+      src="/miker.org/media/openscad-final.png">
+    	
+        <figcaption class="caption">Final OpenSCAD iteration</figcaption>
+      
+    </figure>
+  </a>
+
+
+<p>I still wanted to use a programmatic CAD tool and found <a href="https://github.com/dcowden/cadquery">CadQuery</a> which uses a FreeCAD as a backend and Python for the frontend. Running CadQuery in Docker was the simplest and most reproducible solution for me. I could edit my Python script and run <code>make</code> to get my <code>STL</code> and <code>STEP</code> files out: a very simple development loop. Using Python opened up a world of useful libraries like <code>NumPy</code>, <code>svgpathtools</code> and <code>pyclipper</code>. The last two were especially important because they let me easily manipulate the <code>SVG</code>s coming from swillkb's tool.</p>
+<p>Thanks to CadQuery it's simple to pass the various angle of the keyboard (the split, the tilt and the tent) as runtime options and almost always get a working object.</p>
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <a href=" https://github.com/ecopoesis/nek-type-a/blob/1bc2ed3ca812d8c6d1e43641318b45254b60a80c/body/target/body.stl ">
+    <figure style="
+       width: 100%; ;
+      height: auto;
+      padding: 5px 15px;
+      "
+    >
+  	<img
+      srcset="
+        /miker.org/media/cadquery-final_hud5545cc2ba0fff4017113d701edec7c4_150259_100x0_resize_lanczos_2.png 100w,
+        /miker.org/media/cadquery-final_hud5545cc2ba0fff4017113d701edec7c4_150259_200x0_resize_lanczos_2.png 200w,
+        /miker.org/media/cadquery-final_hud5545cc2ba0fff4017113d701edec7c4_150259_500x0_resize_lanczos_2.png 500w,
+        /miker.org/media/cadquery-final_hud5545cc2ba0fff4017113d701edec7c4_150259_800x0_resize_lanczos_2.png 800w,
+        /miker.org/media/cadquery-final_hud5545cc2ba0fff4017113d701edec7c4_150259_1300x0_resize_lanczos_2.png 1300w,
+        /miker.org/media/cadquery-final_hud5545cc2ba0fff4017113d701edec7c4_150259_2100x0_resize_lanczos_2.png 2100w,
+        /miker.org/media/cadquery-final.png 1014w
+      "
+      sizes="
+        
+          (min-width: 768px) calc(.333 * 100vm),
+          (max-width: 767px) 100vm,
+          100vm
+        
+      "
+      src="/miker.org/media/cadquery-final.png">
+    	
+        <figcaption class="caption">Final CadQuery version</figcaption>
+      
+    </figure>
+  </a>
+
+
+<h3 id="electronics">Electronics</h3>
+<p>With the case done it was now time to tackle the electronics. I wanted to develop three boards: one each for the left and right halves of the keyboard and then a center control unit connected to the halves with ribbon cables. I wanted to keep the halves with the keyswitches as simple as possible to make future upgrades just a matter of swapping out the center board.</p>
+<p>I had no previous experience designing PCBs so I started with <a href="https://kalerator.clueboard.co">Clueboard's Kalerator</a>. This handy tool takes a layout from Keyboard Layout Editor and generates an <a href="https://www.autodesk.com/products/eagle/overview">Eagle</a> script that gives you most of the layout. This was a very easy way to get the footprints of the keyswitches laid out perfectly. For the left and right boards my only mistake was forgetting about the clearance for the stabilizers on the left board: they overlapped with the diodes for those switches. Luckily its easy to put the diode on the other side of the board.</p>
+<p>
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <a href=" /miker.org/media/left-001-top.png ">
+    <figure style="
+       width: 100%; ;
+      height: auto;
+      padding: 5px 15px;
+      "
+    >
+  	<img
+      srcset="
+        /miker.org/media/left-001-top_hu0734e575bc396681b4f050989cb9a0f8_65199_100x0_resize_lanczos_2.png 100w,
+        /miker.org/media/left-001-top_hu0734e575bc396681b4f050989cb9a0f8_65199_200x0_resize_lanczos_2.png 200w,
+        /miker.org/media/left-001-top_hu0734e575bc396681b4f050989cb9a0f8_65199_500x0_resize_lanczos_2.png 500w,
+        /miker.org/media/left-001-top_hu0734e575bc396681b4f050989cb9a0f8_65199_800x0_resize_lanczos_2.png 800w,
+        /miker.org/media/left-001-top_hu0734e575bc396681b4f050989cb9a0f8_65199_1300x0_resize_lanczos_2.png 1300w,
+        /miker.org/media/left-001-top_hu0734e575bc396681b4f050989cb9a0f8_65199_2100x0_resize_lanczos_2.png 2100w,
+        /miker.org/media/left-001-top.png 2619w
+      "
+      sizes="
+        
+          (min-width: 768px) calc(.333 * 100vm),
+          (max-width: 767px) 100vm,
+          100vm
+        
+      "
+      src="/miker.org/media/left-001-top.png">
+    	
+        <figcaption class="caption">Left PCB revision 001 top view</figcaption>
+      
+    </figure>
+  </a>
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <a href=" /miker.org/media/right-001-top.png ">
+    <figure style="
+       width: 100%; ;
+      height: auto;
+      padding: 5px 15px;
+      "
+    >
+  	<img
+      srcset="
+        /miker.org/media/right-001-top_huf89a51a553a14e7d780263020a15c5d5_144003_100x0_resize_lanczos_2.png 100w,
+        /miker.org/media/right-001-top_huf89a51a553a14e7d780263020a15c5d5_144003_200x0_resize_lanczos_2.png 200w,
+        /miker.org/media/right-001-top_huf89a51a553a14e7d780263020a15c5d5_144003_500x0_resize_lanczos_2.png 500w,
+        /miker.org/media/right-001-top_huf89a51a553a14e7d780263020a15c5d5_144003_800x0_resize_lanczos_2.png 800w,
+        /miker.org/media/right-001-top_huf89a51a553a14e7d780263020a15c5d5_144003_1300x0_resize_lanczos_2.png 1300w,
+        /miker.org/media/right-001-top_huf89a51a553a14e7d780263020a15c5d5_144003_2100x0_resize_lanczos_2.png 2100w,
+        /miker.org/media/right-001-top.png 4371w
+      "
+      sizes="
+        
+          (min-width: 768px) calc(.333 * 100vm),
+          (max-width: 767px) 100vm,
+          100vm
+        
+      "
+      src="/miker.org/media/right-001-top.png">
+    	
+        <figcaption class="caption">Right PCB revision 001 top view</figcaption>
+      
+    </figure>
+  </a>
+
+</p>
+<p>I wanted the keyboard to be able to use Bluetooth or USB connection. I also liked the idea of upgradability and a standardized form factor so I used an <a href="https://www.adafruit.com/product/2829">Adafruit Feather 32u4 Bluefruit LE</a> as my microcontroller. Instead of soldering it directly to my PCB I would use headers so it is replaceable if I ever need more power. My center PCB is essentially a very weird Feather wing.</p>
+<p>The Feather does not have enough pins to support my layout so I connected only my row pins (merging the left and right sides) and the left columns directly. The right columns are connected though a <a href="https://www.microchip.com/wwwproducts/en/MCP23017">MCP23017E-S/P</a> I/O expander which connects to the Feather via the I2C bus.</p>
+<p>I ended up needing to do a second spin of the center PCBs because I forgot about clearance for the three mounting holes and because I used the wrong footprint for the switch connector.</p>
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <a href=" /miker.org/media/center-002-top.png ">
+    <figure style="
+       width: 100%; ;
+      height: auto;
+      padding: 5px 15px;
+      "
+    >
+  	<img
+      srcset="
+        /miker.org/media/center-002-top_hu0eae53183ca37bf713c219614c520976_38244_100x0_resize_lanczos_2.png 100w,
+        /miker.org/media/center-002-top_hu0eae53183ca37bf713c219614c520976_38244_200x0_resize_lanczos_2.png 200w,
+        /miker.org/media/center-002-top_hu0eae53183ca37bf713c219614c520976_38244_500x0_resize_lanczos_2.png 500w,
+        /miker.org/media/center-002-top_hu0eae53183ca37bf713c219614c520976_38244_800x0_resize_lanczos_2.png 800w,
+        /miker.org/media/center-002-top_hu0eae53183ca37bf713c219614c520976_38244_1300x0_resize_lanczos_2.png 1300w,
+        /miker.org/media/center-002-top_hu0eae53183ca37bf713c219614c520976_38244_2100x0_resize_lanczos_2.png 2100w,
+        /miker.org/media/center-002-top.png 1084w
+      "
+      sizes="
+        
+          (min-width: 768px) calc(.333 * 100vm),
+          (max-width: 767px) 100vm,
+          100vm
+        
+      "
+      src="/miker.org/media/center-002-top.png">
+    	
+        <figcaption class="caption">Center PCB revision 002 top view</figcaption>
+      
+    </figure>
+  </a>
+
+
+<h3 id="manufacturing">Manufacturing</h3>
+<p>The keyboard was designed to be easily manufactured. The main components that need to be built and the manufacturer I used are:</p>
+<ul>
+<li>The aluminum CNCed case: <a href="https://www.xometry.com">Xometry</a></li>
+<li>The rubber gaskets: <a href="https://www.bigbluesaw.com">Big Blue Saw</a></li>
+<li>Steel plates: <a href="https://lasergist.com">Lasergist</a></li>
+<li>Acrylic plate: <a href="https://www.bigbluesaw.com/">Big Blue Saw</a></li>
+<li>PCBs: <a href="https://oshpark.com">OSH Park</a></li>
+</ul>
+<h3 id="software">Software</h3>
+<p><a href="https://github.com/qmk/qmk_firmware">QMK</a> is a wonderful open-source keyboard firmware. It has baked-in support for 32u4 AVRs and supports the Feather (including Bluetooth). I did need to add add support for the IO expander and fork <code>matrix.c</code> to select columns via the expander. <a href="https://github.com/ecopoesis/qmk_firmware/tree/nek_type_a">My branch</a> of QMK can be found on GitHub.</p>
+<h3 id="assembly">Assembly</h3>
+<p>The first step in assembling a NEK Type A is to install the stabilizers on the PCB and then solder on the diodes.</p>
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <a href=" /miker.org/media/left-pcb.jpg ">
+    <figure style="
+       width: 100%; ;
+      height: auto;
+      padding: 5px 15px;
+      "
+    >
+  	<img
+      srcset="
+        /miker.org/media/left-pcb_hu97d1f4babee15f04cbb970cfa1cb8195_740687_100x0_resize_q85_lanczos.jpg 100w,
+        /miker.org/media/left-pcb_hu97d1f4babee15f04cbb970cfa1cb8195_740687_200x0_resize_q85_lanczos.jpg 200w,
+        /miker.org/media/left-pcb_hu97d1f4babee15f04cbb970cfa1cb8195_740687_500x0_resize_q85_lanczos.jpg 500w,
+        /miker.org/media/left-pcb_hu97d1f4babee15f04cbb970cfa1cb8195_740687_800x0_resize_q85_lanczos.jpg 800w,
+        /miker.org/media/left-pcb_hu97d1f4babee15f04cbb970cfa1cb8195_740687_1300x0_resize_q85_lanczos.jpg 1300w,
+        /miker.org/media/left-pcb_hu97d1f4babee15f04cbb970cfa1cb8195_740687_2100x0_resize_q85_lanczos.jpg 2100w,
+        /miker.org/media/left-pcb.jpg 2782w
+      "
+      sizes="
+        
+          (min-width: 768px) calc(.333 * 100vm),
+          (max-width: 767px) 100vm,
+          100vm
+        
+      "
+      src="/miker.org/media/left-pcb.jpg">
+    	
+        <figcaption class="caption">Left PCB with stabilizers and diodes</figcaption>
+      
+    </figure>
+  </a>
+
+
+<p>The next step is to install the keyswitches and the case. In the first keyboard I build I used Cherry MX Clears. It's easiest to start with the four corners so you get a good alignment between the plate and the PCB. After the corner switches are soldered up it's then just a matter of filling in the rest.</p>
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <a href=" /miker.org/media/left-switches.jpg ">
+    <figure style="
+       width: 100%; ;
+      height: auto;
+      padding: 5px 15px;
+      "
+    >
+  	<img
+      srcset="
+        /miker.org/media/airport_hu616b75fc95bcb804613fc77eab8c3f21_25700_100x0_resize_q85_lanczos.jpg 100w,
+        /miker.org/media/airport_hu616b75fc95bcb804613fc77eab8c3f21_25700_200x0_resize_q85_lanczos.jpg 200w,
+        /miker.org/media/airport_hu616b75fc95bcb804613fc77eab8c3f21_25700_500x0_resize_q85_lanczos.jpg 500w,
+        /miker.org/media/airport_hu616b75fc95bcb804613fc77eab8c3f21_25700_800x0_resize_q85_lanczos.jpg 800w,
+        /miker.org/media/left-switches_hudf7b1764b4f5bd397cc15a2365f41359_959817_1300x0_resize_q85_lanczos.jpg 1300w,
+        /miker.org/media/left-switches_hudf7b1764b4f5bd397cc15a2365f41359_959817_2100x0_resize_q85_lanczos.jpg 2100w,
+        /miker.org/media/left-switches.jpg 3003w
+      "
+      sizes="
+        
+          (min-width: 768px) calc(.333 * 100vm),
+          (max-width: 767px) 100vm,
+          100vm
+        
+      "
+      src="/miker.org/media/left-switches.jpg">
+    	
+        <figcaption class="caption">Left plate with corner switches</figcaption>
+      
+    </figure>
+  </a>
+
+
+<p>After all the switches for a plate are in place I like to add a set of temporary keycaps. I intentionally left a little slop for attaching the assembled plate to the case because I was unsure of the tolerances of the various manufacturing processes I used to create the sub-assemblies. Having the keyscaps on makes lining things up easier.</p>
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <a href=" /miker.org/media/left-keycaps.jpg ">
+    <figure style="
+       width: 100%; ;
+      height: auto;
+      padding: 5px 15px;
+      "
+    >
+  	<img
+      srcset="
+        /miker.org/media/haiku_hue1312bd79251d7dc3c1dbee9d3c02d00_72862_100x0_resize_q85_lanczos.jpg 100w,
+        /miker.org/media/haiku_hue1312bd79251d7dc3c1dbee9d3c02d00_72862_200x0_resize_q85_lanczos.jpg 200w,
+        /miker.org/media/haiku_hue1312bd79251d7dc3c1dbee9d3c02d00_72862_500x0_resize_q85_lanczos.jpg 500w,
+        /miker.org/media/haiku_hue1312bd79251d7dc3c1dbee9d3c02d00_72862_800x0_resize_q85_lanczos.jpg 800w,
+        /miker.org/media/haiku_hue1312bd79251d7dc3c1dbee9d3c02d00_72862_1300x0_resize_q85_lanczos.jpg 1300w,
+        /miker.org/media/left-keycaps_hu66d442e21a0ac7c569d2e18feb765c01_973730_2100x0_resize_q85_lanczos.jpg 2100w,
+        /miker.org/media/left-keycaps.jpg 2842w
+      "
+      sizes="
+        
+          (min-width: 768px) calc(.333 * 100vm),
+          (max-width: 767px) 100vm,
+          100vm
+        
+      "
+      src="/miker.org/media/left-keycaps.jpg">
+    	
+        <figcaption class="caption">Left plate with keycaps</figcaption>
+      
+    </figure>
+  </a>
+
+
+<p>Next is adding all the components to the center PCB. I generally go from flattest to tallest component when soldering because it makes it easy to use the table to support the component. Note that the I/O expander is intolerant of lot of heat so I use a socket to mount it.</p>
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <a href=" /miker.org/media/assembled-center.jpg ">
+    <figure style="
+       width: 100%; ;
+      height: auto;
+      padding: 5px 15px;
+      "
+    >
+  	<img
+      srcset="
+        /miker.org/media/hue-tap_hu011ee7c86ba51cb92d9ee177c7e279ff_67491_100x0_resize_lanczos_2.png 100w,
+        /miker.org/media/assembled-center_hu1c2cfd5ed88210087d4d66394164a394_535034_200x0_resize_q85_lanczos.jpg 200w,
+        /miker.org/media/assembled-center_hu1c2cfd5ed88210087d4d66394164a394_535034_500x0_resize_q85_lanczos.jpg 500w,
+        /miker.org/media/assembled-center_hu1c2cfd5ed88210087d4d66394164a394_535034_800x0_resize_q85_lanczos.jpg 800w,
+        /miker.org/media/hue-tap_hu011ee7c86ba51cb92d9ee177c7e279ff_67491_1300x0_resize_lanczos_2.png 1300w,
+        /miker.org/media/assembled-center_hu1c2cfd5ed88210087d4d66394164a394_535034_2100x0_resize_q85_lanczos.jpg 2100w,
+        /miker.org/media/assembled-center.jpg 1895w
+      "
+      sizes="
+        
+          (min-width: 768px) calc(.333 * 100vm),
+          (max-width: 767px) 100vm,
+          100vm
+        
+      "
+      src="/miker.org/media/assembled-center.jpg">
+    	
+        <figcaption class="caption">Assembled center PCB</figcaption>
+      
+    </figure>
+  </a>
+
+
+<p>Now it's time to put everything in the case. The assembled key plates mount with M5 screws with the laser cut rubber separating the steel and aluminum.</p>
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <a href=" /miker.org/media/case-with-plates.jpg ">
+    <figure style="
+       width: 100%; ;
+      height: auto;
+      padding: 5px 15px;
+      "
+    >
+  	<img
+      srcset="
+        /miker.org/media/switch-box_hu2517f5c7d1cd85a8bb427be4e8410e3b_746845_100x0_resize_q85_lanczos.jpg 100w,
+        /miker.org/media/switch-box_hu2517f5c7d1cd85a8bb427be4e8410e3b_746845_200x0_resize_q85_lanczos.jpg 200w,
+        /miker.org/media/switch-box_hu2517f5c7d1cd85a8bb427be4e8410e3b_746845_500x0_resize_q85_lanczos.jpg 500w,
+        /miker.org/media/switch-box_hu2517f5c7d1cd85a8bb427be4e8410e3b_746845_800x0_resize_q85_lanczos.jpg 800w,
+        /miker.org/media/switch-box_hu2517f5c7d1cd85a8bb427be4e8410e3b_746845_1300x0_resize_q85_lanczos.jpg 1300w,
+        /miker.org/media/case-with-plates_hu29cd189e76a97073bdace9a09e77d21c_1260266_2100x0_resize_q85_lanczos.jpg 2100w,
+        /miker.org/media/case-with-plates.jpg 2953w
+      "
+      sizes="
+        
+          (min-width: 768px) calc(.333 * 100vm),
+          (max-width: 767px) 100vm,
+          100vm
+        
+      "
+      src="/miker.org/media/case-with-plates.jpg">
+    	
+        <figcaption class="caption">Case with plates mounted</figcaption>
+      
+    </figure>
+  </a>
+
+
+<p>The center PCB mounts with M3 standoffs and M3 screws.</p>
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <a href=" /miker.org/media/center-mounted.jpg ">
+    <figure style="
+       width: 100%; ;
+      height: auto;
+      padding: 5px 15px;
+      "
+    >
+  	<img
+      srcset="
+        /miker.org/media/caseta-remote_hu750f77d031c0b4750dee3177de7998ad_7885_100x0_resize_q85_lanczos.jpg 100w,
+        /miker.org/media/caseta-remote_hu750f77d031c0b4750dee3177de7998ad_7885_200x0_resize_q85_lanczos.jpg 200w,
+        /miker.org/media/caseta-remote_hu750f77d031c0b4750dee3177de7998ad_7885_500x0_resize_q85_lanczos.jpg 500w,
+        /miker.org/media/caseta-remote_hu750f77d031c0b4750dee3177de7998ad_7885_800x0_resize_q85_lanczos.jpg 800w,
+        /miker.org/media/caseta-remote_hu750f77d031c0b4750dee3177de7998ad_7885_1300x0_resize_q85_lanczos.jpg 1300w,
+        /miker.org/media/center-mounted_hu29cd189e76a97073bdace9a09e77d21c_925295_2100x0_resize_q85_lanczos.jpg 2100w,
+        /miker.org/media/center-mounted.jpg 3003w
+      "
+      sizes="
+        
+          (min-width: 768px) calc(.333 * 100vm),
+          (max-width: 767px) 100vm,
+          100vm
+        
+      "
+      src="/miker.org/media/center-mounted.jpg">
+    	
+        <figcaption class="caption">Center PCB mounted in case</figcaption>
+      
+    </figure>
+  </a>
+
+
+<p>Add some custom length ribbon cables, a panel mount USB-C cable, a USB-C to Micro USB adapter, an arcade switch for power, a battery, a laser-cut acrylic panel and some M5 feet and you have a completed keyboard.</p>
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <a href=" /miker.org/media/bottom-view.jpg ">
+    <figure style="
+       width: 100%; ;
+      height: auto;
+      padding: 5px 15px;
+      "
+    >
+  	<img
+      srcset="
+        /miker.org/media/caseta-plug_hu1614a82890807e5785836676c3c60361_725765_100x0_resize_q85_lanczos.jpg 100w,
+        /miker.org/media/caseta-plug_hu1614a82890807e5785836676c3c60361_725765_200x0_resize_q85_lanczos.jpg 200w,
+        /miker.org/media/caseta-plug_hu1614a82890807e5785836676c3c60361_725765_500x0_resize_q85_lanczos.jpg 500w,
+        /miker.org/media/bottom-view_hu3a6b4452bbc44feb794aadb569532b29_2007161_800x0_resize_q85_lanczos.jpg 800w,
+        /miker.org/media/caseta-plug_hu1614a82890807e5785836676c3c60361_725765_1300x0_resize_q85_lanczos.jpg 1300w,
+        /miker.org/media/bottom-view_hu3a6b4452bbc44feb794aadb569532b29_2007161_2100x0_resize_q85_lanczos.jpg 2100w,
+        /miker.org/media/bottom-view.jpg 4032w
+      "
+      sizes="
+        
+          (min-width: 768px) calc(.333 * 100vm),
+          (max-width: 767px) 100vm,
+          100vm
+        
+      "
+      src="/miker.org/media/bottom-view.jpg">
+    	
+        <figcaption class="caption">Bottom view of assembled keyboard</figcaption>
+      
+    </figure>
+  </a>
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <a href=" /miker.org/media/back-view.jpg ">
+    <figure style="
+       width: 100%; ;
+      height: auto;
+      padding: 5px 15px;
+      "
+    >
+  	<img
+      srcset="
+        /miker.org/media/sonos_hubcbec460f4b5c021334f96e2169fd226_328573_100x0_resize_lanczos_2.png 100w,
+        /miker.org/media/sonos_hubcbec460f4b5c021334f96e2169fd226_328573_200x0_resize_lanczos_2.png 200w,
+        /miker.org/media/sonos_hubcbec460f4b5c021334f96e2169fd226_328573_500x0_resize_lanczos_2.png 500w,
+        /miker.org/media/sonos_hubcbec460f4b5c021334f96e2169fd226_328573_800x0_resize_lanczos_2.png 800w,
+        /miker.org/media/back-view_huc793a28b20cc05985d0d6e3f93ec2318_2542127_1300x0_resize_q85_lanczos.jpg 1300w,
+        /miker.org/media/back-view_huc793a28b20cc05985d0d6e3f93ec2318_2542127_2100x0_resize_q85_lanczos.jpg 2100w,
+        /miker.org/media/back-view.jpg 3992w
+      "
+      sizes="
+        
+          (min-width: 768px) calc(.333 * 100vm),
+          (max-width: 767px) 100vm,
+          100vm
+        
+      "
+      src="/miker.org/media/back-view.jpg">
+    	
+        <figcaption class="caption">Back view (port and switch) view of assembled keyboard</figcaption>
+      
+    </figure>
+  </a>
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <a href=" /miker.org/media/top-left-view.jpg ">
+    <figure style="
+       width: 100%; ;
+      height: auto;
+      padding: 5px 15px;
+      "
+    >
+  	<img
+      srcset="
+        /miker.org/media/echo_huf93dd59ed72440a93845f1b9a8b1c78c_274782_100x0_resize_q85_lanczos.jpg 100w,
+        /miker.org/media/top-left-view_huc793a28b20cc05985d0d6e3f93ec2318_1827560_200x0_resize_q85_lanczos.jpg 200w,
+        /miker.org/media/top-left-view_huc793a28b20cc05985d0d6e3f93ec2318_1827560_500x0_resize_q85_lanczos.jpg 500w,
+        /miker.org/media/top-left-view_huc793a28b20cc05985d0d6e3f93ec2318_1827560_800x0_resize_q85_lanczos.jpg 800w,
+        /miker.org/media/top-left-view_huc793a28b20cc05985d0d6e3f93ec2318_1827560_1300x0_resize_q85_lanczos.jpg 1300w,
+        /miker.org/media/top-left-view_huc793a28b20cc05985d0d6e3f93ec2318_1827560_2100x0_resize_q85_lanczos.jpg 2100w,
+        /miker.org/media/top-left-view.jpg 2843w
+      "
+      sizes="
+        
+          (min-width: 768px) calc(.333 * 100vm),
+          (max-width: 767px) 100vm,
+          100vm
+        
+      "
+      src="/miker.org/media/top-left-view.jpg">
+    	
+        <figcaption class="caption">Top-left view of assembled keyboard</figcaption>
+      
+    </figure>
+  </a>
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <a href=" /miker.org/media/top-view.jpg ">
+    <figure style="
+       width: 100%; ;
+      height: auto;
+      padding: 5px 15px;
+      "
+    >
+  	<img
+      srcset="
+        /miker.org/media/top-view_huc793a28b20cc05985d0d6e3f93ec2318_1241312_100x0_resize_q85_lanczos.jpg 100w,
+        /miker.org/media/top-view_huc793a28b20cc05985d0d6e3f93ec2318_1241312_200x0_resize_q85_lanczos.jpg 200w,
+        /miker.org/media/top-view_huc793a28b20cc05985d0d6e3f93ec2318_1241312_500x0_resize_q85_lanczos.jpg 500w,
+        /miker.org/media/top-view_huc793a28b20cc05985d0d6e3f93ec2318_1241312_800x0_resize_q85_lanczos.jpg 800w,
+        /miker.org/media/top-view_huc793a28b20cc05985d0d6e3f93ec2318_1241312_1300x0_resize_q85_lanczos.jpg 1300w,
+        /miker.org/media/top-view_huc793a28b20cc05985d0d6e3f93ec2318_1241312_2100x0_resize_q85_lanczos.jpg 2100w,
+        /miker.org/media/top-view.jpg 2932w
+      "
+      sizes="
+        
+          (min-width: 768px) calc(.333 * 100vm),
+          (max-width: 767px) 100vm,
+          100vm
+        
+      "
+      src="/miker.org/media/top-view.jpg">
+    	
+        <figcaption class="caption">Top view of assembled keyboard</figcaption>
+      
+    </figure>
+  </a>
+
+
+<p>Full sources and detailed assembly directions can be found on <a href="https://github.com/ecopoesis/nek-type-a">GitHub</a>.</p>
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item"><a class="tags__link btn" href="/miker.org/tags/cadquery/" rel="tag">cadquery</a></li>
+		<li class="tags__item"><a class="tags__link btn" href="/miker.org/tags/keyboard/" rel="tag">keyboard</a></li>
+		<li class="tags__item"><a class="tags__link btn" href="/miker.org/tags/openscad/" rel="tag">openscad</a></li>
+		<li class="tags__item"><a class="tags__link btn" href="/miker.org/tags/vim/" rel="tag">vim</a></li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+
+
+
+			</div>
+			<aside class="sidebar"><div class="widget-search widget">
+	<form class="widget-search__form" role="search" method="get" action="https://google.com/search">
+		<label>
+			<input class="widget-search__field" type="search" placeholder="SEARCH..." value="" name="q" aria-label="SEARCH...">
+		</label>
+		<input class="widget-search__submit" type="submit" value="Search">
+		<input type="hidden" name="sitesearch" value="https://ecopoesis.github.io/miker.org/" />
+	</form>
+</div>
+<div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/miker.org/new-year-new-blog/">New Year, New Blog</a></li>
+			<li class="widget__item"><a class="widget__link" href="/miker.org/building-a-better-keyboard/">Building a better keyboard</a></li>
+			<li class="widget__item"><a class="widget__link" href="/miker.org/this-old-smart-house/">This Old Smart House</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-taglist widget">
+	<h4 class="widget__title">Tags</h4>
+	<div class="widget__content">
+		<a class="widget-taglist__link widget__link btn" href="/miker.org/tags/3d-printing/" title="3d printing">3d printing</a>
+		<a class="widget-taglist__link widget__link btn" href="/miker.org/tags/abs/" title="abs">abs</a>
+		<a class="widget-taglist__link widget__link btn" href="/miker.org/tags/airport/" title="airport">airport</a>
+		<a class="widget-taglist__link widget__link btn" href="/miker.org/tags/alarm-clock/" title="alarm clock">alarm clock</a>
+		<a class="widget-taglist__link widget__link btn" href="/miker.org/tags/alexa/" title="alexa">alexa</a>
+		<a class="widget-taglist__link widget__link btn" href="/miker.org/tags/arduino-due/" title="arduino due">arduino due</a>
+		<a class="widget-taglist__link widget__link btn" href="/miker.org/tags/arduino-uno/" title="arduino uno">arduino uno</a>
+		<a class="widget-taglist__link widget__link btn" href="/miker.org/tags/cadquery/" title="cadquery">cadquery</a>
+		<a class="widget-taglist__link widget__link btn" href="/miker.org/tags/caseta/" title="caseta">caseta</a>
+		<a class="widget-taglist__link widget__link btn" href="/miker.org/tags/echo/" title="echo">echo</a>
+		<a class="widget-taglist__link widget__link btn" href="/miker.org/tags/embedxcode/" title="embedxcode">embedxcode</a>
+		<a class="widget-taglist__link widget__link btn" href="/miker.org/tags/extruder/" title="extruder">extruder</a>
+		<a class="widget-taglist__link widget__link btn" href="/miker.org/tags/fios/" title="fios">fios</a>
+		<a class="widget-taglist__link widget__link btn" href="/miker.org/tags/haiku/" title="haiku">haiku</a>
+		<a class="widget-taglist__link widget__link btn" href="/miker.org/tags/homekit/" title="homekit">homekit</a>
+		<a class="widget-taglist__link widget__link btn" href="/miker.org/tags/hue/" title="hue">hue</a>
+		<a class="widget-taglist__link widget__link btn" href="/miker.org/tags/hue-tap/" title="hue tap">hue tap</a>
+		<a class="widget-taglist__link widget__link btn" href="/miker.org/tags/intellij/" title="intellij">intellij</a>
+		<a class="widget-taglist__link widget__link btn" href="/miker.org/tags/keyboard/" title="keyboard">keyboard</a>
+		<a class="widget-taglist__link widget__link btn" href="/miker.org/tags/khan/" title="KHAN!!!!!">KHAN!!!!!</a>
+		<a class="widget-taglist__link widget__link btn" href="/miker.org/tags/lego/" title="lego">lego</a>
+		<a class="widget-taglist__link widget__link btn" href="/miker.org/tags/lutron/" title="lutron">lutron</a>
+		<a class="widget-taglist__link widget__link btn" href="/miker.org/tags/mini-split/" title="mini-split">mini-split</a>
+		<a class="widget-taglist__link widget__link btn" href="/miker.org/tags/moca/" title="moca">moca</a>
+		<a class="widget-taglist__link widget__link btn" href="/miker.org/tags/myq/" title="myq">myq</a>
+		<a class="widget-taglist__link widget__link btn" href="/miker.org/tags/nest/" title="nest">nest</a>
+		<a class="widget-taglist__link widget__link btn" href="/miker.org/tags/openscad/" title="openscad">openscad</a>
+		<a class="widget-taglist__link widget__link btn" href="/miker.org/tags/pico/" title="pico">pico</a>
+		<a class="widget-taglist__link widget__link btn" href="/miker.org/tags/pla/" title="pla">pla</a>
+		<a class="widget-taglist__link widget__link btn" href="/miker.org/tags/replicator-2x/" title="replicator 2x">replicator 2x</a>
+		<a class="widget-taglist__link widget__link btn" href="/miker.org/tags/siri/" title="siri">siri</a>
+		<a class="widget-taglist__link widget__link btn" href="/miker.org/tags/solder/" title="solder">solder</a>
+		<a class="widget-taglist__link widget__link btn" href="/miker.org/tags/sonos/" title="sonos">sonos</a>
+		<a class="widget-taglist__link widget__link btn" href="/miker.org/tags/st7565/" title="st7565">st7565</a>
+		<a class="widget-taglist__link widget__link btn" href="/miker.org/tags/u8glib/" title="u8glib">u8glib</a>
+		<a class="widget-taglist__link widget__link btn" href="/miker.org/tags/vim/" title="vim">vim</a>
+		<a class="widget-taglist__link widget__link btn" href="/miker.org/tags/xcode/" title="xcode">xcode</a>
+	</div>
+</div>
+<div class="widget-social widget">
+	<h4 class="widget-social__title widget__title">Social</h4>
+	<div class="widget-social__content widget__content">
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="Twitter" rel="noopener noreferrer" href="https://twitter.com/ecopoesis" target="_blank">
+				<svg class="widget-social__link-icon icon icon-twitter" width="24" height="24" viewBox="0 0 384 312"><path d="m384 36.9c-14.1 6.3-29.3 10.5-45.2 12.4 16.3-9.7 28.8-25.2 34.6-43.6-15.2 9-32.1 15.6-50 19.1-14.4-15.2-34.9-24.8-57.5-24.8-43.5 0-78.8 35.3-78.8 78.8 0 6.2.7 12.2 2 17.9-65.5-3.3-123.5-34.6-162.4-82.3-6.7 11.6-10.6 25.2-10.6 39.6 0 27.3 13.9 51.4 35 65.6-12.9-.4-25.1-4-35.7-9.9v1c0 38.2 27.2 70 63.2 77.2-6.6 1.8-13.6 2.8-20.8 2.8-5.1 0-10-.5-14.8-1.4 10 31.3 39.1 54.1 73.6 54.7-27 21.1-60.9 33.7-97.8 33.7-6.4 0-12.6-.4-18.8-1.1 34.9 22.4 76.3 35.4 120.8 35.4 144.9 0 224.1-120 224.1-224.1 0-3.4-.1-6.8-.2-10.2 15.4-11.1 28.7-25 39.3-40.8z"/></svg>
+				<span>Twitter</span>
+			</a>
+		</div>
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="LinkedIn" rel="noopener noreferrer" href="https://linkedin.com/in/ecopoesis" target="_blank">
+				<svg class="widget-social__link-icon icon icon-linkedin" width="24" height="24" viewBox="0 0 352 352"><path d="M0,40v272c0,21.9,18.1,40,40,40h272c21.9,0,40-18.1,40-40V40c0-21.9-18.1-40-40-40H40C18.1,0,0,18.1,0,40z M312,32 c4.6,0,8,3.4,8,8v272c0,4.6-3.4,8-8,8H40c-4.6,0-8-3.4-8-8V40c0-4.6,3.4-8,8-8H312z M59.5,87c0,15.2,12.3,27.5,27.5,27.5 c15.2,0,27.5-12.3,27.5-27.5c0-15.2-12.3-27.5-27.5-27.5C71.8,59.5,59.5,71.8,59.5,87z M187,157h-1v-21h-45v152h47v-75 c0-19.8,3.9-39,28.5-39c24.2,0,24.5,22.4,24.5,40v74h47v-83.5c0-40.9-8.7-72-56.5-72C208.5,132.5,193.3,145.1,187,157z M64,288h47.5 V136H64V288z"/></svg>
+				<span>LinkedIn</span>
+			</a>
+		</div>
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="GitHub" rel="noopener noreferrer" href="https://github.com/ecopoesis" target="_blank">
+				<svg class="widget-social__link-icon icon icon-github" width="24" height="24" viewBox="0 0 384 374"><path d="m192 0c-106.1 0-192 85.8-192 191.7 0 84.7 55 156.6 131.3 181.9 9.6 1.8 13.1-4.2 13.1-9.2 0-4.6-.2-16.6-.3-32.6-53.4 11.6-64.7-25.7-64.7-25.7-8.7-22.1-21.3-28-21.3-28-17.4-11.9 1.3-11.6 1.3-11.6 19.3 1.4 29.4 19.8 29.4 19.8 17.1 29.3 44.9 20.8 55.9 15.9 1.7-12.4 6.7-20.8 12.2-25.6-42.6-4.8-87.5-21.3-87.5-94.8 0-20.9 7.5-38 19.8-51.4-2-4.9-8.6-24.3 1.9-50.7 0 0 16.1-5.2 52.8 19.7 15.3-4.2 31.7-6.4 48.1-6.5 16.3.1 32.7 2.2 48.1 6.5 36.7-24.8 52.8-19.7 52.8-19.7 10.5 26.4 3.9 45.9 1.9 50.7 12.3 13.4 19.7 30.5 19.7 51.4 0 73.7-44.9 89.9-87.7 94.6 6.9 5.9 13 17.6 13 35.5 0 25.6-.2 46.3-.2 52.6 0 5.1 3.5 11.1 13.2 9.2 76.2-25.5 131.2-97.3 131.2-182 0-105.9-86-191.7-192-191.7z"/></svg>
+				<span>GitHub</span>
+			</a>
+		</div>
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="Email" href="mailto:miker%20-at-%20miker%20-dot-%20org">
+				<svg class="widget-social__link-icon icon icon-mail" width="24" height="24" viewBox="0 0 416 288"><path d="m0 16v256 16h16 384 16v-16-256-16h-16-384-16zm347 16-139 92.5-139-92.5zm-148 125.5 9 5.5 9-5.5 167-111.5v210h-352v-210z"/></svg>
+				<span>miker -at- miker -dot- org</span>
+			</a>
+		</div>
+
+		
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="Thingiverse" rel="noopener noreferrer" href="http://www.thingiverse.com/ecopoesis/designs/" target="_blank">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="24" height="24" class="widget-social__link-icon  icon"><path style="line-height:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000;text-transform:none;block-progression:tb;isolation:auto;mix-blend-mode:normal" d="M25 2C12.31 2 2 12.31 2 25s10.31 23 23 23 23-10.31 23-23S37.69 2 25 2zm0 2c11.61 0 21 9.39 21 21s-9.39 21-21 21S4 36.61 4 25 13.39 4 25 4zm-9 11v6h6v17h6V21h6v-6H16z" font-weight="400" font-family="sans-serif" white-space="normal" overflow="visible"/><metadata><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:dc="http://purl.org/dc/elements/1.1/"><rdf:Description about="https://iconscout.com/legal#licenses" dc:title="thingiverse,filled" dc:description="thingiverse,filled" dc:publisher="Iconscout" dc:date="2017-12-09" dc:format="image/svg+xml" dc:language="en"><dc:creator><rdf:Bag><rdf:li>Icons8</rdf:li></rdf:Bag></dc:creator></rdf:Description></rdf:RDF></metadata></svg>
+
+				<span>Thingiverse</span>
+			</a>
+		</div>
+		
+	</div>
+</div>
+</aside>
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2020 Mike Roberts.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/miker.org/js/menu.js"></script>
+</body>
+</html>

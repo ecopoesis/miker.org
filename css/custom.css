@@ -37,3 +37,8 @@ body {
   font-style: italic;
   text-align: center;
 }
+
+.list__thumbnail {
+  float: right;
+  padding: 0px 15px;
+}

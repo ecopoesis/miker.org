@@ -13,10 +13,10 @@
     
     <item>
       <title>Building a better keyboard</title>
-      <link>https://ecopoesis.github.io/miker.org/2019/02/building-a-better-keyboard/</link>
+      <link>https://ecopoesis.github.io/miker.org/building-a-better-keyboard/</link>
       <pubDate>Mon, 18 Feb 2019 23:07:37 +0000</pubDate>
       
-      <guid>https://ecopoesis.github.io/miker.org/2019/02/building-a-better-keyboard/</guid>
+      <guid>https://ecopoesis.github.io/miker.org/building-a-better-keyboard/</guid>
       <description>I wanted a better keyboard but my plea to the industry had no effect. Since no one would make one for me I built the keyboard myself. My main goals were:
  Standard split-QWERTY layout mirroring the Microsoft Natural Keyboards No number pad High quality mechanical switches Bluetooth and USB-C connections Plug and play (no-solder) microcontroller replacement  Layout Building a keyboard naturally starts with designing the key layout. I used the wonderful Keyboard Layout Editor to build a tweaked version of the classic Microsoft Natural Keyboard layout.</description>
     </item>

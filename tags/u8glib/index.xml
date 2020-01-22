@@ -13,10 +13,10 @@
     
     <item>
       <title>ST7565 Success</title>
-      <link>https://ecopoesis.github.io/miker.org/2013/02/st7565-success/</link>
+      <link>https://ecopoesis.github.io/miker.org/st7565-success/</link>
       <pubDate>Tue, 26 Feb 2013 02:25:42 +0000</pubDate>
       
-      <guid>https://ecopoesis.github.io/miker.org/2013/02/st7565-success/</guid>
+      <guid>https://ecopoesis.github.io/miker.org/st7565-success/</guid>
       <description>After much screwing around, I finally got the ST7565 working with the Arduino Due. The wonderful u8glib recently added support for the Due and had preexisting support for the ST7565.
 I&#39;m still annoyed that I can&#39;t get the adafruit library to work on the Due. I&#39;m slowly porting bits of the u8glib SAM code path for the ST7565 over, but frankly I&#39;m just annoyed with displays at this point, so I&#39;m going to go on the something more interesting, like actually adding a clock to my alarm clock.</description>
     </item>
