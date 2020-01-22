@@ -4,20 +4,21 @@
 {{ $link := .Get "link" }}
 {{ with .Site.GetPage "section" "media" }}
   {{ $original := .Resources.GetMatch $imgname }}
-  {{ .Scratch.Set "image100" ($original.Resize "100x") }}
-  {{ .Scratch.Set "image200" ($original.Resize "200x") }}
-  {{ .Scratch.Set "image300" ($original.Resize "300x") }}
-  {{ .Scratch.Set "image500" ($original.Resize "500x") }}
-  {{ .Scratch.Set "image800" ($original.Resize "800x") }}
-  {{ .Scratch.Set "image1300" ($original.Resize "1300x") }}
-  {{ .Scratch.Set "image2100" ($original.Resize "2100x") }}
-  {{ $image100 := .Scratch.Get "image100" }}
-  {{ $image200 := .Scratch.Get "image200" }}
-  {{ $image300 := .Scratch.Get "image300" }}
-  {{ $image500 := .Scratch.Get "image500" }}
-  {{ $image800 := .Scratch.Get "image800" }}
-  {{ $image1300 := .Scratch.Get "image1300" }}
-  {{ $image2100 := .Scratch.Get "image2100" }}
+  {{ $imgscratch := newScratch }}
+  {{ $imgscratch.Set "image100" ($original.Resize "100x") }}
+  {{ $imgscratch.Set "image200" ($original.Resize "200x") }}
+  {{ $imgscratch.Set "image300" ($original.Resize "300x") }}
+  {{ $imgscratch.Set "image500" ($original.Resize "500x") }}
+  {{ $imgscratch.Set "image800" ($original.Resize "800x") }}
+  {{ $imgscratch.Set "image1300" ($original.Resize "1300x") }}
+  {{ $imgscratch.Set "image2100" ($original.Resize "2100x") }}
+  {{ $image100 := $imgscratch.Get "image100" }}
+  {{ $image200 := $imgscratch.Get "image200" }}
+  {{ $image300 := $imgscratch.Get "image300" }}
+  {{ $image500 := $imgscratch.Get "image500" }}
+  {{ $image800 := $imgscratch.Get "image800" }}
+  {{ $image1300 := $imgscratch.Get "image1300" }}
+  {{ $image2100 := $imgscratch.Get "image2100" }}
   <a href="{{ with $link }} {{.}} {{ else }} {{ $original.RelPermalink }} {{ end }}">
     <figure style="
       {{ with $float }} width: 33% {{ else }} width: 100%; {{ end }};
