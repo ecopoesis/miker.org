@@ -24,6 +24,7 @@ quality = 85
   mainSections = ["posts"]
   highlightColor = "#3423A6"
   customCSS = ["css/custom.css"]
+  relativeURLs = true
 
 [Params.sidebar]
   home = "right" # Configure layout for home page
