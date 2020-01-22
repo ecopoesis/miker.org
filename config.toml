@@ -15,7 +15,7 @@ quality = 85
   [[menu.side]]
     identifier = "resume"
     name = "Resume"
-    url = "Mike Roberts Resume.pdf"
+    url = "/Mike Roberts Resume.pdf"
     weight = 1
 
   [[menu.side]]
