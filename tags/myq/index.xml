@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>myq on miker.org</title>
-    <link>http://miker.org/tags/myq/</link>
+    <link>https://ecopoesis.github.io/miker.org/tags/myq/</link>
     <description>Recent content in myq on miker.org</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 11 Dec 2016 04:35:42 +0000</lastBuildDate>
     
-	<atom:link href="http://miker.org/tags/myq/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://ecopoesis.github.io/miker.org/tags/myq/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>This Old Smart House</title>
-      <link>http://miker.org/2016/12/this-old-smart-house/</link>
+      <link>https://ecopoesis.github.io/miker.org/2016/12/this-old-smart-house/</link>
       <pubDate>Sun, 11 Dec 2016 04:35:42 +0000</pubDate>
       
-      <guid>http://miker.org/2016/12/this-old-smart-house/</guid>
+      <guid>https://ecopoesis.github.io/miker.org/2016/12/this-old-smart-house/</guid>
       <description>Our house is old. City records show it was built in 1910, but that&#39;s just the age the city assigned to all the houses older then that. Our neighbors, who have a house that started life as a mirror image of ours, have found old newspapers in their attic from the 1870s making that our best guess for the age.
 In some cases having an old house is great: structurally the house is solid.</description>
     </item>
