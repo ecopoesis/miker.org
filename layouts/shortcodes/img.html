@@ -15,14 +15,16 @@
     {{ errorf "Invalid image processing command: Must be one of Fit, Fill or Resize."}}
   {{ end }}
   {{ $image := .Scratch.Get "image" }}
-  <figure style="{{ with $float }}float: {{.}};{{end}}">
-  	<img
-      src="{{ $image.RelPermalink }}"
-      width="{{ $image.Width }}"
-      height="{{ $image.Height }}"
-    >
-  	{{ with $caption }}
-      <figcaption><center><small>{{.}}</small></center></figcaption>
-    {{ end }}
-  </figure>
+  <a href="{{ $original.RelPermalink }}">
+    <figure style="padding: 5px 15px; {{ with $float }}float: {{.}};{{end}}">
+    	<img
+        src="{{ $image.RelPermalink }}"
+        width="{{ $image.Width }}"
+        height="{{ $image.Height }}"
+      >
+    	{{ with $caption }}
+        <figcaption class="caption">{{.}}</figcaption>
+      {{ end }}
+    </figure>
+  </a>
 {{ end }}

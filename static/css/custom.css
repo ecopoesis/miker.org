@@ -31,3 +31,9 @@ body {
   text-transform: none;
   text-align: center;
 }
+
+.caption {
+  font-size: x-small;
+  font-style: italic;
+  text-align: center;
+}
