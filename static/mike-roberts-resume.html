@@ -1,0 +1,277 @@
+<html>
+
+<head>
+    <title>Mike Roberts Resume</title>
+    <!-- handcrafted from the finest artisnal bits -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dosis:wght@600&family=Khula:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@500&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        #body {
+            width: 8.5in;
+            height: 11in;
+        }
+
+        .page {
+            max-width: 8.5in;
+            max-height: 11in;
+            margin: 0.25in 0.25in 0.25in 0.25in;
+        }
+
+        .row {
+            display: flex;
+            width: 8in;
+            background-color: #777;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            width: 100%;
+            display: flex;
+            background-color: rgb(47, 1, 107);
+        }
+
+        .name {
+            flex: 60%;
+            color: #fff;
+            padding: 0 .1in 0 .1in;
+            font-family: 'Khula', sans-serif;
+            font-size: 47px;
+            font-weight: 800;
+            align-self: flex-end;
+            height: 55px;
+        }
+
+        .tagline {
+            flex: 40%;
+            color: #fff;
+            padding: 0 .1in 0 .1in;
+            font-family: 'Khula', sans-serif;
+            font-weight: 700;
+            font-size: 20px;
+            text-align: right;
+            align-self: flex-end;
+            height: 29px;
+        }
+
+        .main {
+            flex: 70%;
+            margin: 0;
+            padding: 0 .1in 0 .1in;
+            background-color: #fff;
+            height: 9.5in;
+            margin: 0;
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        .sidebar {
+            flex: 30%;
+            padding: 0;
+            background-color: #bbb;
+            height: 9.5in;
+            margin: 0;
+        }
+
+        div.contact {
+            padding: 0 .1in 0 .1in;
+            background-color: rgb(47, 1, 107);
+            color: #fff;
+            width: 100%;
+        }
+
+        span.contact {
+            padding-right: 10px;
+            font-family: 'Khula', sans-serif;
+            font-size: 14px;
+            display: inline;
+            font-weight: 600;
+            height: 18px;
+        }
+
+        .contact-icons {
+            filter: invert(100%) sepia(0%) saturate(1%) hue-rotate(348deg) brightness(102%) contrast(100%);
+            height: 12px;
+        }
+
+        p {
+            margin: .2em 0 1em 0;
+        }
+
+        .section-header {
+            color: rgb(47, 1, 107);
+            font-family: 'Khula', sans-serif;
+            font-size: 19px;
+            font-weight: 700;
+            border-bottom: rgb(47, 1, 107) 2px solid;
+        }
+
+        .experience-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .company-name {
+            font-family: 'Khula', sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            height: 20px;
+            flex: 0 80%;
+        }
+
+        .company-location {
+            font-family: 'Khula', sans-serif;
+            font-weight: 400;
+            font-size: 12px;
+            height: 16px;
+            flex: 0 20%;
+            align-self: flex-end;
+        }
+
+        .job-title {
+            font-family: 'Khula', sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            color: #777;
+            height: 16px;
+            flex: 0 80%;
+        }
+
+        .job-time {
+            font-family: 'Khula', sans-serif;
+            font-weight: 400;
+            font-size: 12px;
+            height: 16px;
+            flex: 0 20%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+        <div class="row">
+            <div class="header">
+                <div class="name">
+                    mike roberts
+                </div>
+                <div class="tagline">
+                    software engineering leader
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="contact">
+                <span class="contact">
+                    <img class="contact-icons" src="resume-icons/envelope-regular.svg"> miker@miker.org
+                </span>
+                <span class="contact">
+                    <img class="contact-icons" src="resume-icons/globe-americas.svg"> miker.org
+                </span>
+                <span class="contact">
+                    <img class="contact-icons" src="resume-icons/phone-alt.svg"> 508.579.4478
+                </span>
+                <span class="contact">
+                    <img class="contact-icons" src="resume-icons/github.svg"> ecopoesis
+                </span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="main">
+                <div class="summary">
+                    <p>
+                        I am a software leader with two decades experience managing and growing cloud platforms and
+                        software as a service products.
+                    </p>
+                    <p>
+                        I am active proponent of building scalable, well tested, service oriented architectures. I have
+                        led the development numerous platforms over my career, in a variety of languages ranging from 
+                        the terrible (PHP 5) to the sublime (Scala). I am a champion for moving quickly and smartly. I 
+                        have taken multiple products from slow, buggy, waterfall releases to fast, agile, daily releases.
+                    </p>
+                </div>
+                <div class="experience">
+                    <div class="section-header">
+                        experience
+                    </div>
+                    <div class="experience-info">
+                        <div class="company-name">Indigo Agriculture</div>
+                        <div class="company-location">Charlestown, MA</div>
+                        <div class="job-title">Software Engineering Manager</div>
+                        <div class="job-time">2019 - Current</div>
+                    </div>
+                    <p>
+                        I manage Indigo's Agronomy Warehouse team. We are responsible for aggregating and normalizing
+                        all agronomic data from internal and external sources and making it available across the company. 
+                        I designed and championed an eventually consistent data model backed by Kafka. My teams
+                        also pioneered high availability, 24/7 uptime services at Indigo.
+                    </p>
+                    <div class="experience-info">
+                        <div class="company-name">Salsify</div>
+                        <div class="company-location">Boston, MA</div>
+                        <div class="job-title">Lead Software Engineer</div>
+                        <div class="job-time">2016 - 2019</div>
+                    </div>
+                    <p>
+                        While at Salsify I led the platform services team. We developed the shared infrastructure and code 
+                        used by Salsify's application teams. Notable accomplishments include building an asynchronous job 
+                        system and the first wave of Salsify's GraphQL APIs.
+                    </p>
+                    <div class="experience-info">
+                        <div class="company-name">TripAdvisor Vacation Rentals</div>
+                        <div class="company-location">Boston, MA</div>
+                        <div class="job-title">Principal Engineer</div>
+                        <div class="job-time">2015 - 2016</div>
+                    </div>
+                    <p>
+                        Ported legacy FlipKey and Holiday Lettings property management systems to newly designed, unified system.
+                    </p>
+                    <div class="experience-info">
+                        <div class="company-name">Leaf Holdings</div>
+                        <div class="company-location">Cambridge, MA</div>
+                        <div class="job-title">Software Engineering Manager</div>
+                        <div class="job-time">2013 - 2015</div>
+                    </div>
+                    <p>
+                        I lead both the Android and platform teams, enhancing the existing proof- of-concept to scale to 100k 
+                        transactions per second. I hired dozens of engineers including a fully remote team in Istanbul. I worked 
+                        with my engineers to design a distributed, eventually consistent data-store co- homed on our Android 
+                        tablets in the field and on AWS.
+                    </p>
+                    <div class="experience-info">
+                        <div class="company-name">Smarter Travel Media</div>
+                        <div class="company-location">Charlestown, MA</div>
+                        <div class="job-title">Software Engineering Manager</div>
+                        <div class="job-time">2009 - 2013</div>
+                    </div>
+                    <p>
+                        Built and lead the Tingo team, spinning up a new online travel agency in 9 months. Led hiring across the 
+                        STM engineering organization. Ran the architectural review board.
+                    </p>
+                    <div class="experience-info">
+                        <div class="company-name">Cisco Systems</div>
+                        <div class="company-location">Burlington, MA</div>
+                        <div class="job-title">Software Engineering Manager</div>
+                        <div class="job-time">2005 - 2009</div>
+                    </div>
+                    <p>
+                        Designed and built a database system as part of WebEx's SaaS offering.
+                    </p>
+                </div>
+            </div>
+            <div class="sidebar">
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
