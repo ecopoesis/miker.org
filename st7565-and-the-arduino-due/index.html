@@ -44,7 +44,7 @@
 </div>
 </div>
 		</header><div class="content post__content clearfix">
-			<p>I've spent the last several days unsuccessfully trying to get the <a href="http://www.adafruit.com/products/250">ST7565</a> to work with the <a href="http://arduino.cc/en/Main/ArduinoBoardDue">Arduino Due</a>. I've been trying to port <a href="https://github.com/adafruit/ST7565-LCD">ladyada's ST7565 library</a> to the SAM core without much luck.</p>
+			<p>I&rsquo;ve spent the last several days unsuccessfully trying to get the <a href="http://www.adafruit.com/products/250">ST7565</a> to work with the <a href="http://arduino.cc/en/Main/ArduinoBoardDue">Arduino Due</a>. I&rsquo;ve been trying to port <a href="https://github.com/adafruit/ST7565-LCD">ladyada&rsquo;s ST7565 library</a> to the SAM core without much luck.</p>
 <p>
 
 
@@ -96,7 +96,7 @@
   </a>
 
 
-Using the ST7565 with Uno and the library works with no issues, as would be expected, so I didn't fuck up soldering or anything easy to diagnose like that.</p>
+Using the ST7565 with Uno and the library works with no issues, as would be expected, so I didn&rsquo;t fuck up soldering or anything easy to diagnose like that.</p>
 <p>Getting the code to run on the Due is not as easy. Changes I had to make to get the code to compile where:</p>
 <ul>
 <li>Replace the AVR pgmspace code with a <a href="https://github.com/ecopoesis/delorean/blob/master/delorean/pgmspace.h">stubbed out implementation</a> that for SAM</li>
@@ -104,9 +104,9 @@ Using the ST7565 with Uno and the library works with no issues, as would be expe
 <li>Replace calls to the <code>_BV(x)</code> macro with `(1 &laquo; x)``</li>
 <li>Remove references to <code>util/delay.h</code></li>
 <li>Change calls to <code>_delay_ms(x)</code> to <code>delay(x)</code></li>
-<li>Remove the <code>freemem()</code> function and calls to it since it requires macros that don't exist on SAM</li>
+<li>Remove the <code>freemem()</code> function and calls to it since it requires macros that don&rsquo;t exist on SAM</li>
 </ul>
-<p>I've also wired the ST7565 directly to the Due, instead of level shifting it through the 4050 that adafruit supplies with it since the Due is 3.3v already.</p>
+<p>I&rsquo;ve also wired the ST7565 directly to the Due, instead of level shifting it through the 4050 that adafruit supplies with it since the Due is 3.3v already.</p>
 <br clear="all">
 
 <p>
@@ -160,7 +160,7 @@ Using the ST7565 with Uno and the library works with no issues, as would be expe
   </a>
 
 
-Of course, this doesn't work and I'm note sure why. My guess is the speed of the Due is messing with things, but honestly I'm not sure where to even start with debugging this.</p>
+Of course, this doesn&rsquo;t work and I&rsquo;m note sure why. My guess is the speed of the Due is messing with things, but honestly I&rsquo;m not sure where to even start with debugging this.</p>
 <br clear="all">
 
 
