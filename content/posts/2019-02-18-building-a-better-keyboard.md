@@ -88,7 +88,7 @@ The next step is to install the keyswitches and the case. In the first keyboard 
 
 {{< img src="left-switches.jpg" caption="Left plate with corner switches" >}}
 
-After all the switches for a plate are in place I like to add a set of temporary keycaps. I intentionally left a little slop for attaching the assembled plate to the case because I was unsure of the tolerances of the various manufacturing processes I used to create the sub-assemblies. Having the keyscaps on makes lining things up easier.
+After all the switches for a plate are in place I like to add a set of temporary keycaps. I intentionally left a little slop for attaching the assembled plate to the case because I was unsure of the tolerances of the various manufacturing processes I used to create the sub-assemblies. Having the keycaps on makes lining things up easier.
 
 {{< img src="left-keycaps.jpg" caption="Left plate with keycaps" >}}
 
