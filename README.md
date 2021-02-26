@@ -2,6 +2,12 @@
 
 A blog built with Hugo.
 
+## New post
+
+```bash
+hugo new posts/my-fancy-new-post
+```
+
 ## Development
 
 1) Install hugo: `brew install hugo`
