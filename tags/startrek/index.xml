@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>startrek on miker.org</title>
+    <link>https://miker.org/tags/startrek/</link>
+    <description>Recent content in startrek on miker.org</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 26 Feb 2021 11:44:55 -0500</lastBuildDate>
+    
+	<atom:link href="https://miker.org/tags/startrek/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Star Trek: The Next Generation Credits - All Seasons Synced</title>
+      <link>https://miker.org/star-trek-the-next-generation-credits-all-seasons-synced/</link>
+      <pubDate>Fri, 26 Feb 2021 11:44:55 -0500</pubDate>
+      
+      <guid>https://miker.org/star-trek-the-next-generation-credits-all-seasons-synced/</guid>
+      <description>A while back I was watching a lot of episodes of Star Trek: The Next Generation. As the cast changes over the show&#39;s seven seasons, the opening credits also change and I wondered if I could sync the credits together to visualize how the changes worked.
+  Finding a point to sync the videos was difficult. After trying a few different places I ended up using the moment the Enterprise first appears.</description>
+    </item>
+    
+  </channel>
+</rss>

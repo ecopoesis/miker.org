@@ -18,7 +18,7 @@
       
       <guid>https://miker.org/st7565-success/</guid>
       <description>After much screwing around, I finally got the ST7565 working with the Arduino Due. The wonderful u8glib recently added support for the Due and had preexisting support for the ST7565.
-I&amp;rsquo;m still annoyed that I can&amp;rsquo;t get the adafruit library to work on the Due. I&amp;rsquo;m slowly porting bits of the u8glib SAM code path for the ST7565 over, but frankly I&amp;rsquo;m just annoyed with displays at this point, so I&amp;rsquo;m going to go on the something more interesting, like actually adding a clock to my alarm clock.</description>
+I&#39;m still annoyed that I can&#39;t get the adafruit library to work on the Due. I&#39;m slowly porting bits of the u8glib SAM code path for the ST7565 over, but frankly I&#39;m just annoyed with displays at this point, so I&#39;m going to go on the something more interesting, like actually adding a clock to my alarm clock.</description>
     </item>
     
   </channel>
