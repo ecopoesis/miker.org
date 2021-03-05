@@ -12,7 +12,7 @@ tags:
 - vim
 ---
 
-I [wanted a better keyboard](http://miker.org/i-want-a-better-keyboard/) but my plea to the industry had no effect. Since no one would make one for me I built the keyboard myself. My main goals were:  
+I [want a better keyboard]({{< ref "posts/2013-08-28-i-want-a-better-keyboard.md" >}} "I Want A Better Keyboard") but my plea to the industry had no effect. Since no one would make one for me I built the keyboard myself. My main goals were:  
 
 * Standard split-QWERTY layout mirroring the Microsoft Natural Keyboards  
 * No number pad  

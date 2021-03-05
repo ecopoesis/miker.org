@@ -12,7 +12,7 @@ As the cast changes over the show's seven seasons, the opening credits also
 change and I wondered if I could sync the credits together to visualize how the
 changes worked.
 
-{{< youtube id="hEdqEMEui_Q" title="Star Trek The Next Generation Credits - All Seasons Synced" >}}
+{{< youtube id="hEdqEMEui_Q" title="Star Trek: The Next Generation Credits - All Seasons Synced" >}}
 
 Finding a point to sync the videos was difficult. After trying a few different
 places I ended up using the moment the Enterprise first appears. She is after all
