@@ -53,3 +53,20 @@ body {
   margin-left: 0px;
   margin-right: 0px;
 }
+
+table.striped tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+table.striped {
+  border: 2px solid #FFF;
+}
+
+table.striped th {
+  border: 2px solid #FFF;
+  background-color: #e3ebef;
+}
+
+table.striped td {
+  border: 2px solid #FFF;
+}

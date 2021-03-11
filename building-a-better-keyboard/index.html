@@ -135,7 +135,7 @@
   </a>
 
 
-<p>I used <a href="http://builder.swillkb.com/">swillkb&rsquo;s Plate and Case Builder</a> to generate <code>SVG</code> and <code>DXF</code> files from Keyboard Layout Editor files. I made the plates a bit larger than necessary so I would have flanges to screw through. To simplify life I planned on only screwing through the plate: the PCB would only be attached to the switches with solder.</p>
+<p>I used <a href="http://builder.swillkb.com/">swillkb's Plate and Case Builder</a> to generate <code>SVG</code> and <code>DXF</code> files from Keyboard Layout Editor files. I made the plates a bit larger than necessary so I would have flanges to screw through. To simplify life I planned on only screwing through the plate: the PCB would only be attached to the switches with solder.</p>
 <p>I first started building the case in <a href="http://www.openscad.org">OpenSCAD</a> because I used it for some simple 3D printed designs before. Though great for simple designs working with multiple rotated planes is difficult in OpenSCAD. Also as I discovered late in the process OpenSCAD only generates <code>STL</code> files which is fine for consumer 3D printers but not what is needed for CNC machines which generally want <code>STEP</code> files.</p>
 
 
@@ -190,8 +190,8 @@
   </a>
 
 
-<p>I still wanted to use a programmatic CAD tool and found <a href="https://github.com/dcowden/cadquery">CadQuery</a> which uses a FreeCAD as a backend and Python for the frontend. Running CadQuery in Docker was the simplest and most reproducible solution for me. I could edit my Python script and run <code>make</code> to get my <code>STL</code> and <code>STEP</code> files out: a very simple development loop. Using Python opened up a world of useful libraries like <code>NumPy</code>, <code>svgpathtools</code> and <code>pyclipper</code>. The last two were especially important because they let me easily manipulate the <code>SVG</code>s coming from swillkb&rsquo;s tool.</p>
-<p>Thanks to CadQuery it&rsquo;s simple to pass the various angle of the keyboard (the split, the tilt and the tent) as runtime options and almost always get a working object.</p>
+<p>I still wanted to use a programmatic CAD tool and found <a href="https://github.com/dcowden/cadquery">CadQuery</a> which uses a FreeCAD as a backend and Python for the frontend. Running CadQuery in Docker was the simplest and most reproducible solution for me. I could edit my Python script and run <code>make</code> to get my <code>STL</code> and <code>STEP</code> files out: a very simple development loop. Using Python opened up a world of useful libraries like <code>NumPy</code>, <code>svgpathtools</code> and <code>pyclipper</code>. The last two were especially important because they let me easily manipulate the <code>SVG</code>s coming from swillkb's tool.</p>
+<p>Thanks to CadQuery it's simple to pass the various angle of the keyboard (the split, the tilt and the tent) as runtime options and almost always get a working object.</p>
 
 
 
@@ -247,7 +247,7 @@
 
 <h3 id="electronics">Electronics</h3>
 <p>With the case done it was now time to tackle the electronics. I wanted to develop three boards: one each for the left and right halves of the keyboard and then a center control unit connected to the halves with ribbon cables. I wanted to keep the halves with the keyswitches as simple as possible to make future upgrades just a matter of swapping out the center board.</p>
-<p>I had no previous experience designing PCBs so I started with <a href="https://kalerator.clueboard.co">Clueboard&rsquo;s Kalerator</a>. This handy tool takes a layout from Keyboard Layout Editor and generates an <a href="https://www.autodesk.com/products/eagle/overview">Eagle</a> script that gives you most of the layout. This was a very easy way to get the footprints of the keyswitches laid out perfectly. For the left and right boards my only mistake was forgetting about the clearance for the stabilizers on the left board: they overlapped with the diodes for those switches. Luckily its easy to put the diode on the other side of the board.</p>
+<p>I had no previous experience designing PCBs so I started with <a href="https://kalerator.clueboard.co">Clueboard's Kalerator</a>. This handy tool takes a layout from Keyboard Layout Editor and generates an <a href="https://www.autodesk.com/products/eagle/overview">Eagle</a> script that gives you most of the layout. This was a very easy way to get the footprints of the keyswitches laid out perfectly. For the left and right boards my only mistake was forgetting about the clearance for the stabilizers on the left board: they overlapped with the diodes for those switches. Luckily its easy to put the diode on the other side of the board.</p>
 <p>
 
 
@@ -476,7 +476,7 @@
   </a>
 
 
-<p>The next step is to install the keyswitches and the case. In the first keyboard I build I used Cherry MX Clears. It&rsquo;s easiest to start with the four corners so you get a good alignment between the plate and the PCB. After the corner switches are soldered up it&rsquo;s then just a matter of filling in the rest.</p>
+<p>The next step is to install the keyswitches and the case. In the first keyboard I build I used Cherry MX Clears. It's easiest to start with the four corners so you get a good alignment between the plate and the PCB. After the corner switches are soldered up it's then just a matter of filling in the rest.</p>
 
 
 
@@ -638,7 +638,7 @@
   </a>
 
 
-<p>Now it&rsquo;s time to put everything in the case. The assembled key plates mount with M5 screws with the laser cut rubber separating the steel and aluminum.</p>
+<p>Now it's time to put everything in the case. The assembled key plates mount with M5 screws with the laser cut rubber separating the steel and aluminum.</p>
 
 
 
@@ -1011,9 +1011,9 @@
 	<h4 class="widget__title">Recent Posts</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/premiere-movie-script-library/">Premiere Movie Script Library</a></li>
 			<li class="widget__item"><a class="widget__link" href="/star-trek-deep-space-nine-credits-all-seasons-synced/">Star Trek: Deep Space Nine Credits - All Seasons Synced</a></li>
 			<li class="widget__item"><a class="widget__link" href="/star-trek-the-next-generation-credits-all-seasons-synced/">Star Trek: The Next Generation Credits - All Seasons Synced</a></li>
-			<li class="widget__item"><a class="widget__link" href="/new-year-new-blog/">New Year, New Blog</a></li>
 		</ul>
 	</div>
 </div>
@@ -1050,11 +1050,13 @@
 		<a class="widget-taglist__link widget__link btn" href="/tags/pico/" title="pico">pico</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/pla/" title="pla">pla</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/replicator-2x/" title="replicator 2x">replicator 2x</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/screenplay/" title="screenplay">screenplay</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/siri/" title="siri">siri</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/solder/" title="solder">solder</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/sonos/" title="sonos">sonos</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/st7565/" title="st7565">st7565</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/startrek/" title="startrek">startrek</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/starwars/" title="starwars">starwars</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/u8glib/" title="u8glib">u8glib</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/vim/" title="vim">vim</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/xcode/" title="xcode">xcode</a>
