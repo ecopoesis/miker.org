@@ -44,12 +44,12 @@
 </div>
 </div>
 		</header><div class="content post__content clearfix">
-			<p>One of the things I knew going into this project was that I wanted the alarm clock to be compatible with Arduino. Ideally I'm going to expose as many of the Arduino's pins on the final product in an accessible way so people can slap on shields and extend the clock to make it better.</p>
-<p>This then begs the question: which Arduino? I have both a <a href="http://arduino.cc/en/Main/ArduinoBoardUno">Uno</a> and a <a href="http://arduino.cc/en/Main/ArduinoBoardDue">Due</a>. While I like the simplicity, support and cost of the Uno, the Due seems more future proof. My <a href="http://www.adafruit.com/products/250">ST7575</a> already takes up over half the available pins on an Uno, and I haven't even added any clocks, GPS, wakeup lights or the million or so other things this clock is going to do to it. Plus I'm sure the extra speed on the Due will come in handy. So Due it is.</p>
-<p>Next step was to setup the skeleton of my project to give me a place to start putting code. I started this, as one naturally would, in the Arduino IDE. What a mistake. The Arduino IDE has to be the worst programming environment I've ever used. I'm a little spoiled in this respect as I use the wonderful <a href="http://www.jetbrains.com/idea/">IntelliJ IDE</a> fro JetBrains as my main IDE, but trust me, the Arduino IDE is especially terrible. Shift-Tab barely works half the time, there is no static analysis on any type, it doesn't seem to support unit tests. It's a shit show.</p>
-<p>Luckily, a guy called Rei Vilo has built out some templates for Xcode called <a href="http://embedxcode.weebly.com">embedXcode</a> that supports a bunch of embedded systems, including the various Arduinos. And though Xcode isn't as good as IntelliJ, it's a hell of a lot better then the abomination that is the Arduino IDE.</p>
-<p>Unfortunately, because the Due is so new, embedXcode's support for it wasn't quite working. Compiling for the SAM core didn't work: Rei Vilo was able to get that to work. Of course, then uploading didn't work. It turns out that the Due uses a different uploader then previous AVR based boards. After digging into what the shitty Arduino IDE was doing, I figured out the correct option and was able to the Makefiles of embedXcode to do the right thing.</p>
-<p>And now, thankfully, I don't have to use the Arduino IDE for anything. If you'd like to take a look at my code, it's available on <a href="https://github.com/ecopoesis/delorean">Github</a>.</p>
+			<p>One of the things I knew going into this project was that I wanted the alarm clock to be compatible with Arduino. Ideally I&rsquo;m going to expose as many of the Arduino&rsquo;s pins on the final product in an accessible way so people can slap on shields and extend the clock to make it better.</p>
+<p>This then begs the question: which Arduino? I have both a <a href="http://arduino.cc/en/Main/ArduinoBoardUno">Uno</a> and a <a href="http://arduino.cc/en/Main/ArduinoBoardDue">Due</a>. While I like the simplicity, support and cost of the Uno, the Due seems more future proof. My <a href="http://www.adafruit.com/products/250">ST7575</a> already takes up over half the available pins on an Uno, and I haven&rsquo;t even added any clocks, GPS, wakeup lights or the million or so other things this clock is going to do to it. Plus I&rsquo;m sure the extra speed on the Due will come in handy. So Due it is.</p>
+<p>Next step was to setup the skeleton of my project to give me a place to start putting code. I started this, as one naturally would, in the Arduino IDE. What a mistake. The Arduino IDE has to be the worst programming environment I&rsquo;ve ever used. I&rsquo;m a little spoiled in this respect as I use the wonderful <a href="http://www.jetbrains.com/idea/">IntelliJ IDE</a> fro JetBrains as my main IDE, but trust me, the Arduino IDE is especially terrible. Shift-Tab barely works half the time, there is no static analysis on any type, it doesn&rsquo;t seem to support unit tests. It&rsquo;s a shit show.</p>
+<p>Luckily, a guy called Rei Vilo has built out some templates for Xcode called <a href="http://embedxcode.weebly.com">embedXcode</a> that supports a bunch of embedded systems, including the various Arduinos. And though Xcode isn&rsquo;t as good as IntelliJ, it&rsquo;s a hell of a lot better then the abomination that is the Arduino IDE.</p>
+<p>Unfortunately, because the Due is so new, embedXcode&rsquo;s support for it wasn&rsquo;t quite working. Compiling for the SAM core didn&rsquo;t work: Rei Vilo was able to get that to work. Of course, then uploading didn&rsquo;t work. It turns out that the Due uses a different uploader then previous AVR based boards. After digging into what the shitty Arduino IDE was doing, I figured out the correct option and was able to the Makefiles of embedXcode to do the right thing.</p>
+<p>And now, thankfully, I don&rsquo;t have to use the Arduino IDE for anything. If you&rsquo;d like to take a look at my code, it&rsquo;s available on <a href="https://github.com/ecopoesis/delorean">Github</a>.</p>
 
 		</div>
 		<footer class="post__footer">
@@ -103,9 +103,9 @@
 	<h4 class="widget__title">Recent Posts</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/covid-movie-reviews/">Covid Movie Reviews</a></li>
 			<li class="widget__item"><a class="widget__link" href="/premiere-movie-script-library/">Premiere Movie Script Library</a></li>
 			<li class="widget__item"><a class="widget__link" href="/star-trek-deep-space-nine-credits-all-seasons-synced/">Star Trek: Deep Space Nine Credits - All Seasons Synced</a></li>
-			<li class="widget__item"><a class="widget__link" href="/star-trek-the-next-generation-credits-all-seasons-synced/">Star Trek: The Next Generation Credits - All Seasons Synced</a></li>
 		</ul>
 	</div>
 </div>
@@ -136,12 +136,14 @@
 		<a class="widget-taglist__link widget__link btn" href="/tags/lutron/" title="lutron">lutron</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/mini-split/" title="mini-split">mini-split</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/moca/" title="moca">moca</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/movie/" title="movie">movie</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/myq/" title="myq">myq</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/nest/" title="nest">nest</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/openscad/" title="openscad">openscad</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/pico/" title="pico">pico</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/pla/" title="pla">pla</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/replicator-2x/" title="replicator 2x">replicator 2x</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/reviews/" title="reviews">reviews</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/screenplay/" title="screenplay">screenplay</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/siri/" title="siri">siri</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/solder/" title="solder">solder</a>
@@ -199,7 +201,7 @@
 	<div class="container footer__container flex">
 		
 		<div class="footer__copyright">
-			&copy; 2021 Mike Roberts.
+			&copy; 2022 Mike Roberts.
 			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
 		</div>
 	</div>

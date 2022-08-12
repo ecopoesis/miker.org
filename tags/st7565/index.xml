@@ -6,11 +6,7 @@
     <description>Recent content in st7565 on miker.org</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 26 Feb 2013 02:25:42 +0000</lastBuildDate>
-    
-	<atom:link href="https://miker.org/tags/st7565/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 26 Feb 2013 02:25:42 +0000</lastBuildDate><atom:link href="https://miker.org/tags/st7565/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ST7565 Success</title>
       <link>https://miker.org/st7565-success/</link>
@@ -18,7 +14,7 @@
       
       <guid>https://miker.org/st7565-success/</guid>
       <description>After much screwing around, I finally got the ST7565 working with the Arduino Due. The wonderful u8glib recently added support for the Due and had preexisting support for the ST7565.
-I&#39;m still annoyed that I can&#39;t get the adafruit library to work on the Due. I&#39;m slowly porting bits of the u8glib SAM code path for the ST7565 over, but frankly I&#39;m just annoyed with displays at this point, so I&#39;m going to go on the something more interesting, like actually adding a clock to my alarm clock.</description>
+I&amp;rsquo;m still annoyed that I can&amp;rsquo;t get the adafruit library to work on the Due. I&amp;rsquo;m slowly porting bits of the u8glib SAM code path for the ST7565 over, but frankly I&amp;rsquo;m just annoyed with displays at this point, so I&amp;rsquo;m going to go on the something more interesting, like actually adding a clock to my alarm clock.</description>
     </item>
     
     <item>
@@ -27,8 +23,8 @@ I&#39;m still annoyed that I can&#39;t get the adafruit library to work on the D
       <pubDate>Tue, 22 Jan 2013 01:39:17 +0000</pubDate>
       
       <guid>https://miker.org/st7565-and-the-arduino-due/</guid>
-      <description>I&#39;ve spent the last several days unsuccessfully trying to get the ST7565 to work with the Arduino Due. I&#39;ve been trying to port ladyada&#39;s ST7565 library to the SAM core without much luck.
-   Using the ST7565 with Uno and the library works with no issues, as would be expected, so I didn&#39;t fuck up soldering or anything easy to diagnose like that.
+      <description>I&amp;rsquo;ve spent the last several days unsuccessfully trying to get the ST7565 to work with the Arduino Due. I&amp;rsquo;ve been trying to port ladyada&amp;rsquo;s ST7565 library to the SAM core without much luck.
+Using the ST7565 with Uno and the library works with no issues, as would be expected, so I didn&amp;rsquo;t fuck up soldering or anything easy to diagnose like that.
 Getting the code to run on the Due is not as easy.</description>
     </item>
     
@@ -38,8 +34,8 @@ Getting the code to run on the Due is not as easy.</description>
       <pubDate>Sat, 12 Jan 2013 23:02:43 +0000</pubDate>
       
       <guid>https://miker.org/learning-to-solder/</guid>
-      <description>One of this things I knew I need to learn to build the world&#39;s best alarm clock was how to solder. And I was right: one of the first things I needed to do was solder wires to the ST7565 display I got from adafruit so I could hook it up to the Arduino at the heart of the clock.
-Problem 1: I don&#39;t have a soldering iron. Some quick Googling show that there are a lot of cheap soldering irons out there, and that you can probably get away with using them if you&#39;re not doing a ton of work.</description>
+      <description>One of this things I knew I need to learn to build the world&amp;rsquo;s best alarm clock was how to solder. And I was right: one of the first things I needed to do was solder wires to the ST7565 display I got from adafruit so I could hook it up to the Arduino at the heart of the clock.
+Problem 1: I don&amp;rsquo;t have a soldering iron. Some quick Googling show that there are a lot of cheap soldering irons out there, and that you can probably get away with using them if you&amp;rsquo;re not doing a ton of work.</description>
     </item>
     
   </channel>

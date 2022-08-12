@@ -6,18 +6,14 @@
     <description>Recent content in embedxcode on miker.org</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 16 Jan 2013 03:48:24 +0000</lastBuildDate>
-    
-	<atom:link href="https://miker.org/tags/embedxcode/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 16 Jan 2013 03:48:24 +0000</lastBuildDate><atom:link href="https://miker.org/tags/embedxcode/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Struggles With the Arduino Due</title>
       <link>https://miker.org/struggles-with-the-arduino-due/</link>
       <pubDate>Wed, 16 Jan 2013 03:48:24 +0000</pubDate>
       
       <guid>https://miker.org/struggles-with-the-arduino-due/</guid>
-      <description>One of the things I knew going into this project was that I wanted the alarm clock to be compatible with Arduino. Ideally I&#39;m going to expose as many of the Arduino&#39;s pins on the final product in an accessible way so people can slap on shields and extend the clock to make it better.
+      <description>One of the things I knew going into this project was that I wanted the alarm clock to be compatible with Arduino. Ideally I&amp;rsquo;m going to expose as many of the Arduino&amp;rsquo;s pins on the final product in an accessible way so people can slap on shields and extend the clock to make it better.
 This then begs the question: which Arduino? I have both a Uno and a Due. While I like the simplicity, support and cost of the Uno, the Due seems more future proof.</description>
     </item>
     

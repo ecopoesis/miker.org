@@ -87,12 +87,12 @@
     >
   	<img
       srcset="
-        /media/layout_hu13b01341bebaa20b73e5ffd5c4b10e90_188038_100x0_resize_lanczos_2.png 100w,
-        /media/layout_hu13b01341bebaa20b73e5ffd5c4b10e90_188038_200x0_resize_lanczos_2.png 200w,
-        /media/layout_hu13b01341bebaa20b73e5ffd5c4b10e90_188038_500x0_resize_lanczos_2.png 500w,
-        /media/layout_hu13b01341bebaa20b73e5ffd5c4b10e90_188038_800x0_resize_lanczos_2.png 800w,
-        /media/layout_hu13b01341bebaa20b73e5ffd5c4b10e90_188038_1300x0_resize_lanczos_2.png 1300w,
-        /media/layout_hu13b01341bebaa20b73e5ffd5c4b10e90_188038_2100x0_resize_lanczos_2.png 2100w,
+        /media/layout_hu13b01341bebaa20b73e5ffd5c4b10e90_188038_100x0_resize_lanczos_3.png 100w,
+        /media/layout_hu13b01341bebaa20b73e5ffd5c4b10e90_188038_200x0_resize_lanczos_3.png 200w,
+        /media/layout_hu13b01341bebaa20b73e5ffd5c4b10e90_188038_500x0_resize_lanczos_3.png 500w,
+        /media/layout_hu13b01341bebaa20b73e5ffd5c4b10e90_188038_800x0_resize_lanczos_3.png 800w,
+        /media/layout_hu13b01341bebaa20b73e5ffd5c4b10e90_188038_1300x0_resize_lanczos_3.png 1300w,
+        /media/layout_hu13b01341bebaa20b73e5ffd5c4b10e90_188038_2100x0_resize_lanczos_3.png 2100w,
         /media/layout.png 2342w
       "
       sizes="
@@ -135,7 +135,7 @@
   </a>
 
 
-<p>I used <a href="http://builder.swillkb.com/">swillkb's Plate and Case Builder</a> to generate <code>SVG</code> and <code>DXF</code> files from Keyboard Layout Editor files. I made the plates a bit larger than necessary so I would have flanges to screw through. To simplify life I planned on only screwing through the plate: the PCB would only be attached to the switches with solder.</p>
+<p>I used <a href="http://builder.swillkb.com/">swillkb&rsquo;s Plate and Case Builder</a> to generate <code>SVG</code> and <code>DXF</code> files from Keyboard Layout Editor files. I made the plates a bit larger than necessary so I would have flanges to screw through. To simplify life I planned on only screwing through the plate: the PCB would only be attached to the switches with solder.</p>
 <p>I first started building the case in <a href="http://www.openscad.org">OpenSCAD</a> because I used it for some simple 3D printed designs before. Though great for simple designs working with multiple rotated planes is difficult in OpenSCAD. Also as I discovered late in the process OpenSCAD only generates <code>STL</code> files which is fine for consumer 3D printers but not what is needed for CNC machines which generally want <code>STEP</code> files.</p>
 
 
@@ -167,12 +167,12 @@
     >
   	<img
       srcset="
-        /media/openscad-final_hu76ae3da26095a86782c3bd62d8c73568_90110_100x0_resize_lanczos_2.png 100w,
-        /media/openscad-final_hu76ae3da26095a86782c3bd62d8c73568_90110_200x0_resize_lanczos_2.png 200w,
-        /media/openscad-final_hu76ae3da26095a86782c3bd62d8c73568_90110_500x0_resize_lanczos_2.png 500w,
-        /media/openscad-final_hu76ae3da26095a86782c3bd62d8c73568_90110_800x0_resize_lanczos_2.png 800w,
-        /media/openscad-final_hu76ae3da26095a86782c3bd62d8c73568_90110_1300x0_resize_lanczos_2.png 1300w,
-        /media/openscad-final_hu76ae3da26095a86782c3bd62d8c73568_90110_2100x0_resize_lanczos_2.png 2100w,
+        /media/openscad-final_hu76ae3da26095a86782c3bd62d8c73568_90110_100x0_resize_lanczos_3.png 100w,
+        /media/openscad-final_hu76ae3da26095a86782c3bd62d8c73568_90110_200x0_resize_lanczos_3.png 200w,
+        /media/openscad-final_hu76ae3da26095a86782c3bd62d8c73568_90110_500x0_resize_lanczos_3.png 500w,
+        /media/openscad-final_hu76ae3da26095a86782c3bd62d8c73568_90110_800x0_resize_lanczos_3.png 800w,
+        /media/openscad-final_hu76ae3da26095a86782c3bd62d8c73568_90110_1300x0_resize_lanczos_3.png 1300w,
+        /media/openscad-final_hu76ae3da26095a86782c3bd62d8c73568_90110_2100x0_resize_lanczos_3.png 2100w,
         /media/openscad-final.png 890w
       "
       sizes="
@@ -190,8 +190,8 @@
   </a>
 
 
-<p>I still wanted to use a programmatic CAD tool and found <a href="https://github.com/dcowden/cadquery">CadQuery</a> which uses a FreeCAD as a backend and Python for the frontend. Running CadQuery in Docker was the simplest and most reproducible solution for me. I could edit my Python script and run <code>make</code> to get my <code>STL</code> and <code>STEP</code> files out: a very simple development loop. Using Python opened up a world of useful libraries like <code>NumPy</code>, <code>svgpathtools</code> and <code>pyclipper</code>. The last two were especially important because they let me easily manipulate the <code>SVG</code>s coming from swillkb's tool.</p>
-<p>Thanks to CadQuery it's simple to pass the various angle of the keyboard (the split, the tilt and the tent) as runtime options and almost always get a working object.</p>
+<p>I still wanted to use a programmatic CAD tool and found <a href="https://github.com/dcowden/cadquery">CadQuery</a> which uses a FreeCAD as a backend and Python for the frontend. Running CadQuery in Docker was the simplest and most reproducible solution for me. I could edit my Python script and run <code>make</code> to get my <code>STL</code> and <code>STEP</code> files out: a very simple development loop. Using Python opened up a world of useful libraries like <code>NumPy</code>, <code>svgpathtools</code> and <code>pyclipper</code>. The last two were especially important because they let me easily manipulate the <code>SVG</code>s coming from swillkb&rsquo;s tool.</p>
+<p>Thanks to CadQuery it&rsquo;s simple to pass the various angle of the keyboard (the split, the tilt and the tent) as runtime options and almost always get a working object.</p>
 
 
 
@@ -222,12 +222,12 @@
     >
   	<img
       srcset="
-        /media/cadquery-final_hud5545cc2ba0fff4017113d701edec7c4_150259_100x0_resize_lanczos_2.png 100w,
-        /media/cadquery-final_hud5545cc2ba0fff4017113d701edec7c4_150259_200x0_resize_lanczos_2.png 200w,
-        /media/cadquery-final_hud5545cc2ba0fff4017113d701edec7c4_150259_500x0_resize_lanczos_2.png 500w,
-        /media/cadquery-final_hud5545cc2ba0fff4017113d701edec7c4_150259_800x0_resize_lanczos_2.png 800w,
-        /media/cadquery-final_hud5545cc2ba0fff4017113d701edec7c4_150259_1300x0_resize_lanczos_2.png 1300w,
-        /media/cadquery-final_hud5545cc2ba0fff4017113d701edec7c4_150259_2100x0_resize_lanczos_2.png 2100w,
+        /media/cadquery-final_hud5545cc2ba0fff4017113d701edec7c4_150259_100x0_resize_lanczos_3.png 100w,
+        /media/cadquery-final_hud5545cc2ba0fff4017113d701edec7c4_150259_200x0_resize_lanczos_3.png 200w,
+        /media/cadquery-final_hud5545cc2ba0fff4017113d701edec7c4_150259_500x0_resize_lanczos_3.png 500w,
+        /media/cadquery-final_hud5545cc2ba0fff4017113d701edec7c4_150259_800x0_resize_lanczos_3.png 800w,
+        /media/cadquery-final_hud5545cc2ba0fff4017113d701edec7c4_150259_1300x0_resize_lanczos_3.png 1300w,
+        /media/cadquery-final_hud5545cc2ba0fff4017113d701edec7c4_150259_2100x0_resize_lanczos_3.png 2100w,
         /media/cadquery-final.png 1014w
       "
       sizes="
@@ -247,7 +247,7 @@
 
 <h3 id="electronics">Electronics</h3>
 <p>With the case done it was now time to tackle the electronics. I wanted to develop three boards: one each for the left and right halves of the keyboard and then a center control unit connected to the halves with ribbon cables. I wanted to keep the halves with the keyswitches as simple as possible to make future upgrades just a matter of swapping out the center board.</p>
-<p>I had no previous experience designing PCBs so I started with <a href="https://kalerator.clueboard.co">Clueboard's Kalerator</a>. This handy tool takes a layout from Keyboard Layout Editor and generates an <a href="https://www.autodesk.com/products/eagle/overview">Eagle</a> script that gives you most of the layout. This was a very easy way to get the footprints of the keyswitches laid out perfectly. For the left and right boards my only mistake was forgetting about the clearance for the stabilizers on the left board: they overlapped with the diodes for those switches. Luckily its easy to put the diode on the other side of the board.</p>
+<p>I had no previous experience designing PCBs so I started with <a href="https://kalerator.clueboard.co">Clueboard&rsquo;s Kalerator</a>. This handy tool takes a layout from Keyboard Layout Editor and generates an <a href="https://www.autodesk.com/products/eagle/overview">Eagle</a> script that gives you most of the layout. This was a very easy way to get the footprints of the keyswitches laid out perfectly. For the left and right boards my only mistake was forgetting about the clearance for the stabilizers on the left board: they overlapped with the diodes for those switches. Luckily its easy to put the diode on the other side of the board.</p>
 <p>
 
 
@@ -278,12 +278,12 @@
     >
   	<img
       srcset="
-        /media/left-001-top_hu0734e575bc396681b4f050989cb9a0f8_65199_100x0_resize_lanczos_2.png 100w,
-        /media/left-001-top_hu0734e575bc396681b4f050989cb9a0f8_65199_200x0_resize_lanczos_2.png 200w,
-        /media/left-001-top_hu0734e575bc396681b4f050989cb9a0f8_65199_500x0_resize_lanczos_2.png 500w,
-        /media/left-001-top_hu0734e575bc396681b4f050989cb9a0f8_65199_800x0_resize_lanczos_2.png 800w,
-        /media/left-001-top_hu0734e575bc396681b4f050989cb9a0f8_65199_1300x0_resize_lanczos_2.png 1300w,
-        /media/left-001-top_hu0734e575bc396681b4f050989cb9a0f8_65199_2100x0_resize_lanczos_2.png 2100w,
+        /media/left-001-top_hu0734e575bc396681b4f050989cb9a0f8_65199_100x0_resize_lanczos_3.png 100w,
+        /media/left-001-top_hu0734e575bc396681b4f050989cb9a0f8_65199_200x0_resize_lanczos_3.png 200w,
+        /media/left-001-top_hu0734e575bc396681b4f050989cb9a0f8_65199_500x0_resize_lanczos_3.png 500w,
+        /media/left-001-top_hu0734e575bc396681b4f050989cb9a0f8_65199_800x0_resize_lanczos_3.png 800w,
+        /media/left-001-top_hu0734e575bc396681b4f050989cb9a0f8_65199_1300x0_resize_lanczos_3.png 1300w,
+        /media/left-001-top_hu0734e575bc396681b4f050989cb9a0f8_65199_2100x0_resize_lanczos_3.png 2100w,
         /media/left-001-top.png 2619w
       "
       sizes="
@@ -331,12 +331,12 @@
     >
   	<img
       srcset="
-        /media/right-001-top_huf89a51a553a14e7d780263020a15c5d5_144003_100x0_resize_lanczos_2.png 100w,
-        /media/right-001-top_huf89a51a553a14e7d780263020a15c5d5_144003_200x0_resize_lanczos_2.png 200w,
-        /media/right-001-top_huf89a51a553a14e7d780263020a15c5d5_144003_500x0_resize_lanczos_2.png 500w,
-        /media/right-001-top_huf89a51a553a14e7d780263020a15c5d5_144003_800x0_resize_lanczos_2.png 800w,
-        /media/right-001-top_huf89a51a553a14e7d780263020a15c5d5_144003_1300x0_resize_lanczos_2.png 1300w,
-        /media/right-001-top_huf89a51a553a14e7d780263020a15c5d5_144003_2100x0_resize_lanczos_2.png 2100w,
+        /media/right-001-top_huf89a51a553a14e7d780263020a15c5d5_144003_100x0_resize_lanczos_3.png 100w,
+        /media/right-001-top_huf89a51a553a14e7d780263020a15c5d5_144003_200x0_resize_lanczos_3.png 200w,
+        /media/right-001-top_huf89a51a553a14e7d780263020a15c5d5_144003_500x0_resize_lanczos_3.png 500w,
+        /media/right-001-top_huf89a51a553a14e7d780263020a15c5d5_144003_800x0_resize_lanczos_3.png 800w,
+        /media/right-001-top_huf89a51a553a14e7d780263020a15c5d5_144003_1300x0_resize_lanczos_3.png 1300w,
+        /media/right-001-top_huf89a51a553a14e7d780263020a15c5d5_144003_2100x0_resize_lanczos_3.png 2100w,
         /media/right-001-top.png 4371w
       "
       sizes="
@@ -387,12 +387,12 @@
     >
   	<img
       srcset="
-        /media/center-002-top_hu0eae53183ca37bf713c219614c520976_38244_100x0_resize_lanczos_2.png 100w,
-        /media/center-002-top_hu0eae53183ca37bf713c219614c520976_38244_200x0_resize_lanczos_2.png 200w,
-        /media/center-002-top_hu0eae53183ca37bf713c219614c520976_38244_500x0_resize_lanczos_2.png 500w,
-        /media/center-002-top_hu0eae53183ca37bf713c219614c520976_38244_800x0_resize_lanczos_2.png 800w,
-        /media/center-002-top_hu0eae53183ca37bf713c219614c520976_38244_1300x0_resize_lanczos_2.png 1300w,
-        /media/center-002-top_hu0eae53183ca37bf713c219614c520976_38244_2100x0_resize_lanczos_2.png 2100w,
+        /media/center-002-top_hu0eae53183ca37bf713c219614c520976_38244_100x0_resize_lanczos_3.png 100w,
+        /media/center-002-top_hu0eae53183ca37bf713c219614c520976_38244_200x0_resize_lanczos_3.png 200w,
+        /media/center-002-top_hu0eae53183ca37bf713c219614c520976_38244_500x0_resize_lanczos_3.png 500w,
+        /media/center-002-top_hu0eae53183ca37bf713c219614c520976_38244_800x0_resize_lanczos_3.png 800w,
+        /media/center-002-top_hu0eae53183ca37bf713c219614c520976_38244_1300x0_resize_lanczos_3.png 1300w,
+        /media/center-002-top_hu0eae53183ca37bf713c219614c520976_38244_2100x0_resize_lanczos_3.png 2100w,
         /media/center-002-top.png 1084w
       "
       sizes="
@@ -476,7 +476,7 @@
   </a>
 
 
-<p>The next step is to install the keyswitches and the case. In the first keyboard I build I used Cherry MX Clears. It's easiest to start with the four corners so you get a good alignment between the plate and the PCB. After the corner switches are soldered up it's then just a matter of filling in the rest.</p>
+<p>The next step is to install the keyswitches and the case. In the first keyboard I build I used Cherry MX Clears. It&rsquo;s easiest to start with the four corners so you get a good alignment between the plate and the PCB. After the corner switches are soldered up it&rsquo;s then just a matter of filling in the rest.</p>
 
 
 
@@ -638,7 +638,7 @@
   </a>
 
 
-<p>Now it's time to put everything in the case. The assembled key plates mount with M5 screws with the laser cut rubber separating the steel and aluminum.</p>
+<p>Now it&rsquo;s time to put everything in the case. The assembled key plates mount with M5 screws with the laser cut rubber separating the steel and aluminum.</p>
 
 
 
@@ -1011,9 +1011,9 @@
 	<h4 class="widget__title">Recent Posts</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/covid-movie-reviews/">Covid Movie Reviews</a></li>
 			<li class="widget__item"><a class="widget__link" href="/premiere-movie-script-library/">Premiere Movie Script Library</a></li>
 			<li class="widget__item"><a class="widget__link" href="/star-trek-deep-space-nine-credits-all-seasons-synced/">Star Trek: Deep Space Nine Credits - All Seasons Synced</a></li>
-			<li class="widget__item"><a class="widget__link" href="/star-trek-the-next-generation-credits-all-seasons-synced/">Star Trek: The Next Generation Credits - All Seasons Synced</a></li>
 		</ul>
 	</div>
 </div>
@@ -1044,12 +1044,14 @@
 		<a class="widget-taglist__link widget__link btn" href="/tags/lutron/" title="lutron">lutron</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/mini-split/" title="mini-split">mini-split</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/moca/" title="moca">moca</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/movie/" title="movie">movie</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/myq/" title="myq">myq</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/nest/" title="nest">nest</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/openscad/" title="openscad">openscad</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/pico/" title="pico">pico</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/pla/" title="pla">pla</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/replicator-2x/" title="replicator 2x">replicator 2x</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/reviews/" title="reviews">reviews</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/screenplay/" title="screenplay">screenplay</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/siri/" title="siri">siri</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/solder/" title="solder">solder</a>
@@ -1107,7 +1109,7 @@
 	<div class="container footer__container flex">
 		
 		<div class="footer__copyright">
-			&copy; 2021 Mike Roberts.
+			&copy; 2022 Mike Roberts.
 			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
 		</div>
 	</div>

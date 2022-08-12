@@ -1,294 +1,187 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://miker.org/posts/</loc>
-    <lastmod>2021-03-11T13:28:49-05:00</lastmod>
+    <lastmod>2022-08-03T14:22:35-04:00</lastmod>
     <priority>0</priority>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://miker.org/covid-movie-reviews/</loc>
+    <lastmod>2022-08-03T14:22:35-04:00</lastmod>
+  </url><url>
     <loc>https://miker.org/</loc>
-    <lastmod>2021-03-11T13:28:49-05:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2022-08-03T14:22:35-04:00</lastmod>
+  </url><url>
+    <loc>https://miker.org/tags/movie/</loc>
+    <lastmod>2022-08-03T14:22:35-04:00</lastmod>
+  </url><url>
+    <loc>https://miker.org/tags/reviews/</loc>
+    <lastmod>2022-08-03T14:22:35-04:00</lastmod>
+  </url><url>
+    <loc>https://miker.org/tags/</loc>
+    <lastmod>2022-08-03T14:22:35-04:00</lastmod>
+  </url><url>
     <loc>https://miker.org/premiere-movie-script-library/</loc>
     <lastmod>2021-03-11T13:28:49-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://miker.org/tags/screenplay/</loc>
     <lastmod>2021-03-11T13:28:49-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://miker.org/tags/startrek/</loc>
     <lastmod>2021-03-11T13:28:49-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://miker.org/tags/starwars/</loc>
     <lastmod>2021-03-11T13:28:49-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://miker.org/tags/</loc>
-    <lastmod>2021-03-11T13:28:49-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://miker.org/star-trek-deep-space-nine-credits-all-seasons-synced/</loc>
     <lastmod>2021-03-05T16:03:27-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://miker.org/star-trek-the-next-generation-credits-all-seasons-synced/</loc>
     <lastmod>2021-02-26T11:44:55-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://miker.org/new-year-new-blog/</loc>
     <lastmod>2020-01-22T14:04:27-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://miker.org/building-a-better-keyboard/</loc>
     <lastmod>2019-02-18T23:07:37+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://miker.org/tags/cadquery/</loc>
     <lastmod>2019-02-18T23:07:37+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://miker.org/tags/keyboard/</loc>
     <lastmod>2019-02-18T23:07:37+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://miker.org/tags/openscad/</loc>
     <lastmod>2019-02-18T23:07:37+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://miker.org/tags/vim/</loc>
     <lastmod>2019-02-18T23:07:37+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://miker.org/tags/airport/</loc>
     <lastmod>2016-12-11T04:35:42+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://miker.org/tags/alexa/</loc>
     <lastmod>2016-12-11T04:35:42+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://miker.org/tags/caseta/</loc>
     <lastmod>2016-12-11T04:35:42+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://miker.org/tags/echo/</loc>
     <lastmod>2016-12-11T04:35:42+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://miker.org/tags/fios/</loc>
     <lastmod>2016-12-11T04:35:42+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://miker.org/tags/haiku/</loc>
     <lastmod>2016-12-11T04:35:42+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://miker.org/tags/homekit/</loc>
     <lastmod>2016-12-11T04:35:42+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://miker.org/tags/hue/</loc>
     <lastmod>2016-12-11T04:35:42+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://miker.org/tags/hue-tap/</loc>
     <lastmod>2016-12-11T04:35:42+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://miker.org/tags/lutron/</loc>
     <lastmod>2016-12-11T04:35:42+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://miker.org/tags/mini-split/</loc>
     <lastmod>2016-12-11T04:35:42+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://miker.org/tags/moca/</loc>
     <lastmod>2016-12-11T04:35:42+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://miker.org/tags/myq/</loc>
     <lastmod>2016-12-11T04:35:42+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://miker.org/tags/nest/</loc>
     <lastmod>2016-12-11T04:35:42+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://miker.org/tags/pico/</loc>
     <lastmod>2016-12-11T04:35:42+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://miker.org/tags/siri/</loc>
     <lastmod>2016-12-11T04:35:42+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://miker.org/tags/sonos/</loc>
     <lastmod>2016-12-11T04:35:42+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://miker.org/this-old-smart-house/</loc>
     <lastmod>2016-12-11T04:35:42+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://miker.org/i-want-a-better-keyboard/</loc>
     <lastmod>2013-08-28T15:25:13+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://miker.org/tags/khan/</loc>
     <lastmod>2013-08-28T15:25:13+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://miker.org/tags/lego/</loc>
     <lastmod>2013-08-28T15:25:13+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://miker.org/tags/3d-printing/</loc>
     <lastmod>2013-05-16T18:59:17+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://miker.org/tags/abs/</loc>
     <lastmod>2013-05-16T18:59:17+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://miker.org/adventures-in-3d-printing/</loc>
     <lastmod>2013-05-16T18:59:17+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://miker.org/tags/extruder/</loc>
     <lastmod>2013-05-16T18:59:17+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://miker.org/tags/pla/</loc>
     <lastmod>2013-05-16T18:59:17+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://miker.org/tags/replicator-2x/</loc>
     <lastmod>2013-05-16T18:59:17+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://miker.org/tags/alarm-clock/</loc>
     <lastmod>2013-02-26T02:25:42+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://miker.org/tags/arduino-due/</loc>
     <lastmod>2013-02-26T02:25:42+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://miker.org/tags/st7565/</loc>
     <lastmod>2013-02-26T02:25:42+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://miker.org/st7565-success/</loc>
     <lastmod>2013-02-26T02:25:42+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://miker.org/tags/u8glib/</loc>
     <lastmod>2013-02-26T02:25:42+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://miker.org/st7565-and-the-arduino-due/</loc>
     <lastmod>2013-01-22T01:39:17+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://miker.org/tags/arduino-uno/</loc>
     <lastmod>2013-01-16T03:48:24+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://miker.org/tags/embedxcode/</loc>
     <lastmod>2013-01-16T03:48:24+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://miker.org/tags/intellij/</loc>
     <lastmod>2013-01-16T03:48:24+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://miker.org/struggles-with-the-arduino-due/</loc>
     <lastmod>2013-01-16T03:48:24+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://miker.org/tags/xcode/</loc>
     <lastmod>2013-01-16T03:48:24+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://miker.org/learning-to-solder/</loc>
     <lastmod>2013-01-12T23:02:43+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://miker.org/tags/solder/</loc>
     <lastmod>2013-01-12T23:02:43+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://miker.org/alarm-clocks-suck/</loc>
     <lastmod>2013-01-06T18:31:17+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://miker.org/categories/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://miker.org/media/</loc>
   </url>
-  
 </urlset>
