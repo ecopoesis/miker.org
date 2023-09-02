@@ -1,4 +1,4 @@
-.DS_Store
+**/.DS_Store
 
 # Generated files by hugo
 /public/
@@ -8,3 +8,4 @@ hugo_stats.json
 
 # Temporary lock file while building
 /.hugo_build.lock
+
