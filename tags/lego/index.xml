@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>lego on miker.org</title>
+    <link>https://miker.org/tags/lego/</link>
+    <description>Recent content in lego on miker.org</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 28 Aug 2013 15:25:13 +0000</lastBuildDate><atom:link href="https://miker.org/tags/lego/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>I Want A Better Keyboard</title>
+      <link>https://miker.org/i-want-a-better-keyboard/</link>
+      <pubDate>Wed, 28 Aug 2013 15:25:13 +0000</pubDate>
+      
+      <guid>https://miker.org/i-want-a-better-keyboard/</guid>
+      <description>Over on Hacker News, there is a discussion about Atwood&amp;rsquo;s new keyboard. It looks nice, but it&amp;rsquo;s not my ultimate keyboard. So bored rich people out there, build me a better keyboard.
+First, it needs to be ergonomic. Microsoft has pretty much perfected this, so let&amp;rsquo;s start by copying their natural keyboard design. The basic wave shape and key layout of the current natural keyboards is great, especially since they fixed the layout of the navigation (insert/delete) cluster.</description>
+    </item>
+    
+  </channel>
+</rss>

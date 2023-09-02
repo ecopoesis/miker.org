@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>intellij on miker.org</title>
+    <link>https://miker.org/tags/intellij/</link>
+    <description>Recent content in intellij on miker.org</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 16 Jan 2013 03:48:24 +0000</lastBuildDate><atom:link href="https://miker.org/tags/intellij/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Struggles With the Arduino Due</title>
+      <link>https://miker.org/struggles-with-the-arduino-due/</link>
+      <pubDate>Wed, 16 Jan 2013 03:48:24 +0000</pubDate>
+      
+      <guid>https://miker.org/struggles-with-the-arduino-due/</guid>
+      <description>One of the things I knew going into this project was that I wanted the alarm clock to be compatible with Arduino. Ideally I&amp;rsquo;m going to expose as many of the Arduino&amp;rsquo;s pins on the final product in an accessible way so people can slap on shields and extend the clock to make it better.
+This then begs the question: which Arduino? I have both a Uno and a Due. While I like the simplicity, support and cost of the Uno, the Due seems more future proof.</description>
+    </item>
+    
+  </channel>
+</rss>
