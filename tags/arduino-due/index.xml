@@ -24,7 +24,7 @@ I&amp;rsquo;m still annoyed that I can&amp;rsquo;t get the adafruit library to w
       
       <guid>https://miker.org/st7565-and-the-arduino-due/</guid>
       <description>I&amp;rsquo;ve spent the last several days unsuccessfully trying to get the ST7565 to work with the Arduino Due. I&amp;rsquo;ve been trying to port ladyada&amp;rsquo;s ST7565 library to the SAM core without much luck.
-Using the ST7565 with Uno and the library works with no issues, as would be expected, so I didn&amp;rsquo;t fuck up soldering or anything easy to diagnose like that.
+   Using the ST7565 with Uno and the library works with no issues, as would be expected, so I didn&amp;rsquo;t fuck up soldering or anything easy to diagnose like that.
 Getting the code to run on the Due is not as easy.</description>
     </item>
     

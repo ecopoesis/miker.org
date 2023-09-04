@@ -24,7 +24,7 @@ I&amp;rsquo;m still annoyed that I can&amp;rsquo;t get the adafruit library to w
       
       <guid>https://miker.org/st7565-and-the-arduino-due/</guid>
       <description>I&amp;rsquo;ve spent the last several days unsuccessfully trying to get the ST7565 to work with the Arduino Due. I&amp;rsquo;ve been trying to port ladyada&amp;rsquo;s ST7565 library to the SAM core without much luck.
-Using the ST7565 with Uno and the library works with no issues, as would be expected, so I didn&amp;rsquo;t fuck up soldering or anything easy to diagnose like that.
+   Using the ST7565 with Uno and the library works with no issues, as would be expected, so I didn&amp;rsquo;t fuck up soldering or anything easy to diagnose like that.
 Getting the code to run on the Due is not as easy.</description>
     </item>
     
@@ -54,7 +54,7 @@ Problem 1: I don&amp;rsquo;t have a soldering iron. Some quick Googling show tha
       <pubDate>Sun, 06 Jan 2013 18:31:17 +0000</pubDate>
       
       <guid>https://miker.org/alarm-clocks-suck/</guid>
-      <description>Crappy Sony Alarm Clock All current alarm clocks suck. Go look at Amazon and see what I mean. The best appear to be the Sony designs, which look unchanged from mid-90s. Piles of buttons, no auto-setting of time, no modern technology. If you want something built this decade, the best bet is the iHome crap. I&amp;rsquo;m sure you&amp;rsquo;ve seen these: the look like they&amp;rsquo;re designed by a blind man, they only support iPhones and iPods, and still aren&amp;rsquo;t all that high-tech.</description>
+      <description>Crappy Sony Alarm Clock   All current alarm clocks suck. Go look at Amazon and see what I mean. The best appear to be the Sony designs, which look unchanged from mid-90s. Piles of buttons, no auto-setting of time, no modern technology. If you want something built this decade, the best bet is the iHome crap. I&amp;rsquo;m sure you&amp;rsquo;ve seen these: the look like they&amp;rsquo;re designed by a blind man, they only support iPhones and iPods, and still aren&amp;rsquo;t all that high-tech.</description>
     </item>
     
   </channel>

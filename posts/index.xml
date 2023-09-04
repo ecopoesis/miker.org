@@ -6,7 +6,16 @@
     <description>Recent content on miker.org</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 16 Aug 2022 16:27:21 -0400</lastBuildDate><atom:link href="https://miker.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 04 Sep 2023 16:32:00 -0400</lastBuildDate><atom:link href="https://miker.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Covid Movie Reviews Part 2</title>
+      <link>https://miker.org/covid-movie-reviews-part-2/</link>
+      <pubDate>Mon, 04 Sep 2023 16:32:00 -0400</pubDate>
+      
+      <guid>https://miker.org/covid-movie-reviews-part-2/</guid>
+      <description>What do you do when your family has Covid and you&#39;re are stuck in the basement so you don&#39;t get it? Watch more movies obviously.</description>
+    </item>
+    
     <item>
       <title>Watercoolers are an anti-pattern</title>
       <link>https://miker.org/watercoolers-are-an-anti-pattern/</link>
@@ -42,7 +51,7 @@ There were nineteen scripts published between 1994 and 1995.</description>
       
       <guid>https://miker.org/star-trek-deep-space-nine-credits-all-seasons-synced/</guid>
       <description>YouTube commenters have asked, so here are the combined credits for Star Trek: Deep Space Nine. Like with TNG the credits are synced around the logo.
-Deep Space Nine famously changed its theme song between seasons three and four. I&amp;rsquo;ve represented this by putting the early season theme in the left channel and the later seasons&amp;rsquo; theme in the right. They don&amp;rsquo;t sound too bad mixed together but this gives the option of only listening to one or the other.</description>
+  Deep Space Nine famously changed its theme song between seasons three and four. I&amp;rsquo;ve represented this by putting the early season theme in the left channel and the later seasons&#39; theme in the right. They don&amp;rsquo;t sound too bad mixed together but this gives the option of only listening to one or the other.</description>
     </item>
     
     <item>
@@ -52,7 +61,7 @@ Deep Space Nine famously changed its theme song between seasons three and four. 
       
       <guid>https://miker.org/star-trek-the-next-generation-credits-all-seasons-synced/</guid>
       <description>A while back I was watching a lot of episodes of Star Trek: The Next Generation. As the cast changes over the show&amp;rsquo;s seven seasons, the opening credits also change and I wondered if I could sync the credits together to visualize how the changes worked.
-Finding a point to sync the videos was difficult. After trying a few different places I ended up using the moment the Enterprise first appears.</description>
+  Finding a point to sync the videos was difficult. After trying a few different places I ended up using the moment the Enterprise first appears.</description>
     </item>
     
     <item>
@@ -71,7 +80,7 @@ Finding a point to sync the videos was difficult. After trying a few different p
       
       <guid>https://miker.org/building-a-better-keyboard/</guid>
       <description>I want a better keyboard but my plea to the industry had no effect. Since no one would make one for me I built the keyboard myself. My main goals were:
-Standard split-QWERTY layout mirroring the Microsoft Natural Keyboards No number pad High quality mechanical switches Bluetooth and USB-C connections Plug and play (no-solder) microcontroller replacement Layout Building a keyboard naturally starts with designing the key layout. I used the wonderful Keyboard Layout Editor to build a tweaked version of the classic Microsoft Natural Keyboard layout.</description>
+ Standard split-QWERTY layout mirroring the Microsoft Natural Keyboards No number pad High quality mechanical switches Bluetooth and USB-C connections Plug and play (no-solder) microcontroller replacement  Layout Building a keyboard naturally starts with designing the key layout. I used the wonderful Keyboard Layout Editor to build a tweaked version of the classic Microsoft Natural Keyboard layout.</description>
     </item>
     
     <item>
@@ -91,7 +100,7 @@ In some cases having an old house is great: structurally the house is solid.</de
       
       <guid>https://miker.org/i-want-a-better-keyboard/</guid>
       <description>Over on Hacker News, there is a discussion about Atwood&amp;rsquo;s new keyboard. It looks nice, but it&amp;rsquo;s not my ultimate keyboard. So bored rich people out there, build me a better keyboard.
-First, it needs to be ergonomic. Microsoft has pretty much perfected this, so let&amp;rsquo;s start by copying their natural keyboard design. The basic wave shape and key layout of the current natural keyboards is great, especially since they fixed the layout of the navigation (insert/delete) cluster.</description>
+   First, it needs to be ergonomic. Microsoft has pretty much perfected this, so let&amp;rsquo;s start by copying their natural keyboard design. The basic wave shape and key layout of the current natural keyboards is great, especially since they fixed the layout of the navigation (insert/delete) cluster.</description>
     </item>
     
     <item>
@@ -100,7 +109,7 @@ First, it needs to be ergonomic. Microsoft has pretty much perfected this, so le
       <pubDate>Thu, 16 May 2013 18:59:17 +0000</pubDate>
       
       <guid>https://miker.org/adventures-in-3d-printing/</guid>
-      <description>First print on the Replicator 2X After a long wait, my MakerBot Replicator 2X was finally shipped and came in. I’ve wanted a 3D printer for a long time (going back to the Cupcake days) and only this year was able to convince my wife that we “needed” one.
+      <description>First print on the Replicator 2X   After a long wait, my MakerBot Replicator 2X was finally shipped and came in. I’ve wanted a 3D printer for a long time (going back to the Cupcake days) and only this year was able to convince my wife that we “needed” one.
 Two problems were apparent right away: no cover and no magnetic latch on the front door. Both of these are vital for keeping warm air around ABS, and keeping cats out in progress prints.</description>
     </item>
     
@@ -121,7 +130,7 @@ I&amp;rsquo;m still annoyed that I can&amp;rsquo;t get the adafruit library to w
       
       <guid>https://miker.org/st7565-and-the-arduino-due/</guid>
       <description>I&amp;rsquo;ve spent the last several days unsuccessfully trying to get the ST7565 to work with the Arduino Due. I&amp;rsquo;ve been trying to port ladyada&amp;rsquo;s ST7565 library to the SAM core without much luck.
-Using the ST7565 with Uno and the library works with no issues, as would be expected, so I didn&amp;rsquo;t fuck up soldering or anything easy to diagnose like that.
+   Using the ST7565 with Uno and the library works with no issues, as would be expected, so I didn&amp;rsquo;t fuck up soldering or anything easy to diagnose like that.
 Getting the code to run on the Due is not as easy.</description>
     </item>
     
@@ -151,7 +160,7 @@ Problem 1: I don&amp;rsquo;t have a soldering iron. Some quick Googling show tha
       <pubDate>Sun, 06 Jan 2013 18:31:17 +0000</pubDate>
       
       <guid>https://miker.org/alarm-clocks-suck/</guid>
-      <description>Crappy Sony Alarm Clock All current alarm clocks suck. Go look at Amazon and see what I mean. The best appear to be the Sony designs, which look unchanged from mid-90s. Piles of buttons, no auto-setting of time, no modern technology. If you want something built this decade, the best bet is the iHome crap. I&amp;rsquo;m sure you&amp;rsquo;ve seen these: the look like they&amp;rsquo;re designed by a blind man, they only support iPhones and iPods, and still aren&amp;rsquo;t all that high-tech.</description>
+      <description>Crappy Sony Alarm Clock   All current alarm clocks suck. Go look at Amazon and see what I mean. The best appear to be the Sony designs, which look unchanged from mid-90s. Piles of buttons, no auto-setting of time, no modern technology. If you want something built this decade, the best bet is the iHome crap. I&amp;rsquo;m sure you&amp;rsquo;ve seen these: the look like they&amp;rsquo;re designed by a blind man, they only support iPhones and iPods, and still aren&amp;rsquo;t all that high-tech.</description>
     </item>
     
   </channel>
