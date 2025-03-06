@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>St7565 on miker.org</title>
+    <link>https://miker.org/tags/st7565/</link>
+    <description>Recent content in St7565 on miker.org</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 26 Feb 2013 02:25:42 +0000</lastBuildDate>
+    <atom:link href="https://miker.org/tags/st7565/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ST7565 Success</title>
+      <link>https://miker.org/st7565-success/</link>
+      <pubDate>Tue, 26 Feb 2013 02:25:42 +0000</pubDate>
+      <guid>https://miker.org/st7565-success/</guid>
+      <description>&lt;p&gt;&#xA;&#xA;&#xA;&#xA;&#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &lt;a href=&#34; /media/st7565-due-success.jpg &#34;&gt;&#xA;    &lt;figure style=&#34;&#xA;       width: 33% ;&#xA;      height: auto;&#xA;      padding: 5px 15px;&#xA;      float: right;&#34;&#xA;    &gt;&#xA;  &#x9;&lt;img&#xA;      srcset=&#34;&#xA;        /media/st7565-due-success_hu_c1a70cb059969821.jpg 100w,&#xA;        /media/st7565-due-success_hu_fabe9d4f9d3cbe41.jpg 200w,&#xA;        /media/st7565-due-success_hu_cb61116ddb8d70e8.jpg 500w,&#xA;        /media/st7565-due-success_hu_fc527d3cb01f09c9.jpg 800w,&#xA;        /media/st7565-due-success_hu_7c92f0c159414fed.jpg 1300w,&#xA;        /media/st7565-due-success_hu_956762ccbbd08848.jpg 2100w,&#xA;        /media/st7565-due-success.jpg 3264w&#xA;      &#34;&#xA;      sizes=&#34;&#xA;        &#xA;          (min-width: 768px) calc(.333 * .333 * 100vm),&#xA;          (max-width: 767px) calc(.333 * 100vm),&#xA;          100vm&#xA;        &#xA;      &#34;&#xA;      src=&#34;https://miker.org/media/st7565-due-success.jpg&#34;&gt;&#xA;    &#x9;&#xA;    &lt;/figure&gt;&#xA;  &lt;/a&gt;&#xA;&#xA;&#xA;After much screwing around, I finally got the ST7565 working with the Arduino Due. The wonderful &lt;a href=&#34;http://code.google.com/p/u8glib/&#34;&gt;u8glib&lt;/a&gt; recently added support for the Due and had preexisting support for the ST7565.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>ST7565 and the Arduino Due</title>
+      <link>https://miker.org/st7565-and-the-arduino-due/</link>
+      <pubDate>Tue, 22 Jan 2013 01:39:17 +0000</pubDate>
+      <guid>https://miker.org/st7565-and-the-arduino-due/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve spent the last several days unsuccessfully trying to get the &lt;a href=&#34;http://www.adafruit.com/products/250&#34;&gt;ST7565&lt;/a&gt; to work with the &lt;a href=&#34;http://arduino.cc/en/Main/ArduinoBoardDue&#34;&gt;Arduino Due&lt;/a&gt;. I&amp;rsquo;ve been trying to port &lt;a href=&#34;https://github.com/adafruit/ST7565-LCD&#34;&gt;ladyada&amp;rsquo;s ST7565 library&lt;/a&gt; to the SAM core without much luck.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;&#xA;&#xA;&#xA;&#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &lt;a href=&#34; /media/st7565-uno.jpg &#34;&gt;&#xA;    &lt;figure style=&#34;&#xA;       width: 33% ;&#xA;      height: auto;&#xA;      padding: 5px 15px;&#xA;      float: right;&#34;&#xA;    &gt;&#xA;  &#x9;&lt;img&#xA;      srcset=&#34;&#xA;        /media/st7565-uno_hu_df1b4f8c721a4889.jpg 100w,&#xA;        /media/st7565-uno_hu_2254299892d7226.jpg 200w,&#xA;        /media/st7565-uno_hu_972efe07e5fe0203.jpg 500w,&#xA;        /media/st7565-uno_hu_4328d6cbdbeed082.jpg 800w,&#xA;        /media/st7565-uno_hu_bcaca90a9806080c.jpg 1300w,&#xA;        /media/st7565-uno_hu_7a6895bd3d6d9762.jpg 2100w,&#xA;        /media/st7565-uno.jpg 3264w&#xA;      &#34;&#xA;      sizes=&#34;&#xA;        &#xA;          (min-width: 768px) calc(.333 * .333 * 100vm),&#xA;          (max-width: 767px) calc(.333 * 100vm),&#xA;          100vm&#xA;        &#xA;      &#34;&#xA;      src=&#34;https://miker.org/media/st7565-uno.jpg&#34;&gt;&#xA;    &#x9;&#xA;    &lt;/figure&gt;&#xA;  &lt;/a&gt;&#xA;&#xA;&#xA;Using the ST7565 with Uno and the library works with no issues, as would be expected, so I didn&amp;rsquo;t fuck up soldering or anything easy to diagnose like that.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Learning to Solder</title>
+      <link>https://miker.org/learning-to-solder/</link>
+      <pubDate>Sat, 12 Jan 2013 23:02:43 +0000</pubDate>
+      <guid>https://miker.org/learning-to-solder/</guid>
+      <description>&lt;p&gt;One of this things I knew I need to learn to build the world&amp;rsquo;s best alarm clock was how to solder. And I was right: one of the first things I needed to do was solder wires to the &lt;a href=&#34;http://www.adafruit.com/products/250&#34;&gt;ST7565&lt;/a&gt; display I got from adafruit so I could hook it up to the Arduino at the heart of the clock.&lt;/p&gt;&#xA;&lt;p&gt;Problem 1: I don&amp;rsquo;t have a soldering iron. Some quick Googling show that there are a lot of cheap soldering irons out there, and that you can probably get away with using them if you&amp;rsquo;re not doing a ton of work. But everyone seems to agree that the &lt;a href=&#34;http://www.amazon.com/gp/product/B004M3U0VU/ref=as_li_qf_sp_asin_tl?ie=UTF8&amp;amp;tag=mikerorg-20&amp;amp;linkCode=as2&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=B004M3U0VU&#34;&gt;Hakko FX-888&lt;/a&gt; is the best there is.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

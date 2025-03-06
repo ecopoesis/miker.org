@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cadquery on miker.org</title>
+    <link>https://miker.org/tags/cadquery/</link>
+    <description>Recent content in Cadquery on miker.org</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 18 Feb 2019 23:07:37 +0000</lastBuildDate>
+    <atom:link href="https://miker.org/tags/cadquery/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Building a better keyboard</title>
+      <link>https://miker.org/building-a-better-keyboard/</link>
+      <pubDate>Mon, 18 Feb 2019 23:07:37 +0000</pubDate>
+      <guid>https://miker.org/building-a-better-keyboard/</guid>
+      <description>&lt;p&gt;I &lt;a href=&#34;https://miker.org/i-want-a-better-keyboard/&#34; title=&#34;I Want A Better Keyboard&#34;&gt;want a better keyboard&lt;/a&gt; but my plea to the industry had no effect. Since no one would make one for me I built the keyboard myself. My main goals were:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Standard split-QWERTY layout mirroring the Microsoft Natural Keyboards&lt;/li&gt;&#xA;&lt;li&gt;No number pad&lt;/li&gt;&#xA;&lt;li&gt;High quality mechanical switches&lt;/li&gt;&#xA;&lt;li&gt;Bluetooth and USB-C connections&lt;/li&gt;&#xA;&lt;li&gt;Plug and play (no-solder) microcontroller replacement&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;layout&#34;&gt;Layout&lt;/h3&gt;&#xA;&lt;p&gt;Building a keyboard naturally starts with designing the key layout. I used the wonderful &lt;a href=&#34;http://www.keyboard-layout-editor.com&#34;&gt;Keyboard Layout Editor&lt;/a&gt; to build a tweaked version of the classic Microsoft Natural Keyboard layout.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Arduino Due on miker.org</title>
+    <link>https://miker.org/tags/arduino-due/</link>
+    <description>Recent content in Arduino Due on miker.org</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 26 Feb 2013 02:25:42 +0000</lastBuildDate>
+    <atom:link href="https://miker.org/tags/arduino-due/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ST7565 Success</title>
+      <link>https://miker.org/st7565-success/</link>
+      <pubDate>Tue, 26 Feb 2013 02:25:42 +0000</pubDate>
+      <guid>https://miker.org/st7565-success/</guid>
+      <description>&lt;p&gt;&#xA;&#xA;&#xA;&#xA;&#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &lt;a href=&#34; /media/st7565-due-success.jpg &#34;&gt;&#xA;    &lt;figure style=&#34;&#xA;       width: 33% ;&#xA;      height: auto;&#xA;      padding: 5px 15px;&#xA;      float: right;&#34;&#xA;    &gt;&#xA;  &#x9;&lt;img&#xA;      srcset=&#34;&#xA;        /media/st7565-due-success_hu_c1a70cb059969821.jpg 100w,&#xA;        /media/st7565-due-success_hu_fabe9d4f9d3cbe41.jpg 200w,&#xA;        /media/st7565-due-success_hu_cb61116ddb8d70e8.jpg 500w,&#xA;        /media/st7565-due-success_hu_fc527d3cb01f09c9.jpg 800w,&#xA;        /media/st7565-due-success_hu_7c92f0c159414fed.jpg 1300w,&#xA;        /media/st7565-due-success_hu_956762ccbbd08848.jpg 2100w,&#xA;        /media/st7565-due-success.jpg 3264w&#xA;      &#34;&#xA;      sizes=&#34;&#xA;        &#xA;          (min-width: 768px) calc(.333 * .333 * 100vm),&#xA;          (max-width: 767px) calc(.333 * 100vm),&#xA;          100vm&#xA;        &#xA;      &#34;&#xA;      src=&#34;https://miker.org/media/st7565-due-success.jpg&#34;&gt;&#xA;    &#x9;&#xA;    &lt;/figure&gt;&#xA;  &lt;/a&gt;&#xA;&#xA;&#xA;After much screwing around, I finally got the ST7565 working with the Arduino Due. The wonderful &lt;a href=&#34;http://code.google.com/p/u8glib/&#34;&gt;u8glib&lt;/a&gt; recently added support for the Due and had preexisting support for the ST7565.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>ST7565 and the Arduino Due</title>
+      <link>https://miker.org/st7565-and-the-arduino-due/</link>
+      <pubDate>Tue, 22 Jan 2013 01:39:17 +0000</pubDate>
+      <guid>https://miker.org/st7565-and-the-arduino-due/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve spent the last several days unsuccessfully trying to get the &lt;a href=&#34;http://www.adafruit.com/products/250&#34;&gt;ST7565&lt;/a&gt; to work with the &lt;a href=&#34;http://arduino.cc/en/Main/ArduinoBoardDue&#34;&gt;Arduino Due&lt;/a&gt;. I&amp;rsquo;ve been trying to port &lt;a href=&#34;https://github.com/adafruit/ST7565-LCD&#34;&gt;ladyada&amp;rsquo;s ST7565 library&lt;/a&gt; to the SAM core without much luck.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;&#xA;&#xA;&#xA;&#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &lt;a href=&#34; /media/st7565-uno.jpg &#34;&gt;&#xA;    &lt;figure style=&#34;&#xA;       width: 33% ;&#xA;      height: auto;&#xA;      padding: 5px 15px;&#xA;      float: right;&#34;&#xA;    &gt;&#xA;  &#x9;&lt;img&#xA;      srcset=&#34;&#xA;        /media/st7565-uno_hu_df1b4f8c721a4889.jpg 100w,&#xA;        /media/st7565-uno_hu_2254299892d7226.jpg 200w,&#xA;        /media/st7565-uno_hu_972efe07e5fe0203.jpg 500w,&#xA;        /media/st7565-uno_hu_4328d6cbdbeed082.jpg 800w,&#xA;        /media/st7565-uno_hu_bcaca90a9806080c.jpg 1300w,&#xA;        /media/st7565-uno_hu_7a6895bd3d6d9762.jpg 2100w,&#xA;        /media/st7565-uno.jpg 3264w&#xA;      &#34;&#xA;      sizes=&#34;&#xA;        &#xA;          (min-width: 768px) calc(.333 * .333 * 100vm),&#xA;          (max-width: 767px) calc(.333 * 100vm),&#xA;          100vm&#xA;        &#xA;      &#34;&#xA;      src=&#34;https://miker.org/media/st7565-uno.jpg&#34;&gt;&#xA;    &#x9;&#xA;    &lt;/figure&gt;&#xA;  &lt;/a&gt;&#xA;&#xA;&#xA;Using the ST7565 with Uno and the library works with no issues, as would be expected, so I didn&amp;rsquo;t fuck up soldering or anything easy to diagnose like that.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Struggles With the Arduino Due</title>
+      <link>https://miker.org/struggles-with-the-arduino-due/</link>
+      <pubDate>Wed, 16 Jan 2013 03:48:24 +0000</pubDate>
+      <guid>https://miker.org/struggles-with-the-arduino-due/</guid>
+      <description>&lt;p&gt;One of the things I knew going into this project was that I wanted the alarm clock to be compatible with Arduino. Ideally I&amp;rsquo;m going to expose as many of the Arduino&amp;rsquo;s pins on the final product in an accessible way so people can slap on shields and extend the clock to make it better.&lt;/p&gt;&#xA;&lt;p&gt;This then begs the question: which Arduino? I have both a &lt;a href=&#34;http://arduino.cc/en/Main/ArduinoBoardUno&#34;&gt;Uno&lt;/a&gt; and a &lt;a href=&#34;http://arduino.cc/en/Main/ArduinoBoardDue&#34;&gt;Due&lt;/a&gt;. While I like the simplicity, support and cost of the Uno, the Due seems more future proof. My &lt;a href=&#34;http://www.adafruit.com/products/250&#34;&gt;ST7575&lt;/a&gt; already takes up over half the available pins on an Uno, and I haven&amp;rsquo;t even added any clocks, GPS, wakeup lights or the million or so other things this clock is going to do to it. Plus I&amp;rsquo;m sure the extra speed on the Due will come in handy. So Due it is.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

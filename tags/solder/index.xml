@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Solder on miker.org</title>
+    <link>https://miker.org/tags/solder/</link>
+    <description>Recent content in Solder on miker.org</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 12 Jan 2013 23:02:43 +0000</lastBuildDate>
+    <atom:link href="https://miker.org/tags/solder/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Learning to Solder</title>
+      <link>https://miker.org/learning-to-solder/</link>
+      <pubDate>Sat, 12 Jan 2013 23:02:43 +0000</pubDate>
+      <guid>https://miker.org/learning-to-solder/</guid>
+      <description>&lt;p&gt;One of this things I knew I need to learn to build the world&amp;rsquo;s best alarm clock was how to solder. And I was right: one of the first things I needed to do was solder wires to the &lt;a href=&#34;http://www.adafruit.com/products/250&#34;&gt;ST7565&lt;/a&gt; display I got from adafruit so I could hook it up to the Arduino at the heart of the clock.&lt;/p&gt;&#xA;&lt;p&gt;Problem 1: I don&amp;rsquo;t have a soldering iron. Some quick Googling show that there are a lot of cheap soldering irons out there, and that you can probably get away with using them if you&amp;rsquo;re not doing a ton of work. But everyone seems to agree that the &lt;a href=&#34;http://www.amazon.com/gp/product/B004M3U0VU/ref=as_li_qf_sp_asin_tl?ie=UTF8&amp;amp;tag=mikerorg-20&amp;amp;linkCode=as2&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=B004M3U0VU&#34;&gt;Hakko FX-888&lt;/a&gt; is the best there is.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

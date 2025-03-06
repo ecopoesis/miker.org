@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Starwars on miker.org</title>
+    <link>https://miker.org/tags/starwars/</link>
+    <description>Recent content in Starwars on miker.org</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 11 Mar 2021 13:28:49 -0500</lastBuildDate>
+    <atom:link href="https://miker.org/tags/starwars/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Premiere Movie Script Library</title>
+      <link>https://miker.org/premiere-movie-script-library/</link>
+      <pubDate>Thu, 11 Mar 2021 13:28:49 -0500</pubDate>
+      <guid>https://miker.org/premiere-movie-script-library/</guid>
+      <description>&lt;p&gt;While I was looking for a nice reading copy of &lt;em&gt;Raiders of the Lost Ark&lt;/em&gt; I&#xA;discovered an old series of screenplays called the Premiere Movie Script Library.&#xA;The defunct &lt;a href=&#34;https://en.wikipedia.org/wiki/Premiere_(magazine)&#34;&gt;Premiere magazine&lt;/a&gt;&#xA;published this series of screenplays of popular and classic movies. I was&#xA;disappointed to find no information about the series on the web, so I thought I&amp;rsquo;d put together&#xA;what I found.&lt;/p&gt;&#xA;&lt;p&gt;There were nineteen scripts published between 1994 and 1995. Below they are&#xA;listed in the order they appear in the editions published later.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

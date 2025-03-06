@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Keyboard on miker.org</title>
+    <link>https://miker.org/tags/keyboard/</link>
+    <description>Recent content in Keyboard on miker.org</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 18 Feb 2019 23:07:37 +0000</lastBuildDate>
+    <atom:link href="https://miker.org/tags/keyboard/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Building a better keyboard</title>
+      <link>https://miker.org/building-a-better-keyboard/</link>
+      <pubDate>Mon, 18 Feb 2019 23:07:37 +0000</pubDate>
+      <guid>https://miker.org/building-a-better-keyboard/</guid>
+      <description>&lt;p&gt;I &lt;a href=&#34;https://miker.org/i-want-a-better-keyboard/&#34; title=&#34;I Want A Better Keyboard&#34;&gt;want a better keyboard&lt;/a&gt; but my plea to the industry had no effect. Since no one would make one for me I built the keyboard myself. My main goals were:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Standard split-QWERTY layout mirroring the Microsoft Natural Keyboards&lt;/li&gt;&#xA;&lt;li&gt;No number pad&lt;/li&gt;&#xA;&lt;li&gt;High quality mechanical switches&lt;/li&gt;&#xA;&lt;li&gt;Bluetooth and USB-C connections&lt;/li&gt;&#xA;&lt;li&gt;Plug and play (no-solder) microcontroller replacement&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;layout&#34;&gt;Layout&lt;/h3&gt;&#xA;&lt;p&gt;Building a keyboard naturally starts with designing the key layout. I used the wonderful &lt;a href=&#34;http://www.keyboard-layout-editor.com&#34;&gt;Keyboard Layout Editor&lt;/a&gt; to build a tweaked version of the classic Microsoft Natural Keyboard layout.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>I Want A Better Keyboard</title>
+      <link>https://miker.org/i-want-a-better-keyboard/</link>
+      <pubDate>Wed, 28 Aug 2013 15:25:13 +0000</pubDate>
+      <guid>https://miker.org/i-want-a-better-keyboard/</guid>
+      <description>&lt;p&gt;Over on Hacker News, there is a &lt;a href=&#34;https://news.ycombinator.com/item?id=6286735&#34;&gt;discussion&lt;/a&gt; about &lt;a href=&#34;http://www.codinghorror.com/blog/2013/08/the-code-keyboard.html&#34;&gt;Atwood&amp;rsquo;s new keyboard&lt;/a&gt;. It looks nice, but it&amp;rsquo;s not my ultimate keyboard. So bored rich people out there, build me a better keyboard.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;&#xA;&#xA;&#xA;&#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &#xA;  &lt;a href=&#34; /media/natural-keyboard.jpg &#34;&gt;&#xA;    &lt;figure style=&#34;&#xA;       width: 33% ;&#xA;      height: auto;&#xA;      padding: 5px 15px;&#xA;      float: right;&#34;&#xA;    &gt;&#xA;  &#x9;&lt;img&#xA;      srcset=&#34;&#xA;        /media/natural-keyboard_hu_f11e39c403e134a2.jpg 100w,&#xA;        /media/natural-keyboard_hu_4311355c35a327d4.jpg 200w,&#xA;        /media/natural-keyboard_hu_49c2cb81f0c84527.jpg 500w,&#xA;        /media/natural-keyboard_hu_5b2a3d447db1f36c.jpg 800w,&#xA;        /media/natural-keyboard_hu_87b1eb1b608ff34.jpg 1300w,&#xA;        /media/natural-keyboard_hu_7ccab6b8ef996736.jpg 2100w,&#xA;        /media/natural-keyboard.jpg 540w&#xA;      &#34;&#xA;      sizes=&#34;&#xA;        &#xA;          (min-width: 768px) calc(.333 * .333 * 100vm),&#xA;          (max-width: 767px) calc(.333 * 100vm),&#xA;          100vm&#xA;        &#xA;      &#34;&#xA;      src=&#34;https://miker.org/media/natural-keyboard.jpg&#34;&gt;&#xA;    &#x9;&#xA;    &lt;/figure&gt;&#xA;  &lt;/a&gt;&#xA;&#xA;&#xA;First, it needs to be ergonomic. Microsoft has pretty much perfected this, so let&amp;rsquo;s start by copying their natural keyboard design. The basic wave shape and key layout of the current natural keyboards is great, especially since they fixed the layout of the navigation (insert/delete) cluster. We&amp;rsquo;ll drop the stupid silver buttons across the top: they&amp;rsquo;re way too far to reach from the home row. We&amp;rsquo;ll also need to nuke the zoom thing in the center. We&amp;rsquo;re going to need that space for something else later.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

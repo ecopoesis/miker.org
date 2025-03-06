@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Intellij on miker.org</title>
+    <link>https://miker.org/tags/intellij/</link>
+    <description>Recent content in Intellij on miker.org</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 16 Jan 2013 03:48:24 +0000</lastBuildDate>
+    <atom:link href="https://miker.org/tags/intellij/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Struggles With the Arduino Due</title>
+      <link>https://miker.org/struggles-with-the-arduino-due/</link>
+      <pubDate>Wed, 16 Jan 2013 03:48:24 +0000</pubDate>
+      <guid>https://miker.org/struggles-with-the-arduino-due/</guid>
+      <description>&lt;p&gt;One of the things I knew going into this project was that I wanted the alarm clock to be compatible with Arduino. Ideally I&amp;rsquo;m going to expose as many of the Arduino&amp;rsquo;s pins on the final product in an accessible way so people can slap on shields and extend the clock to make it better.&lt;/p&gt;&#xA;&lt;p&gt;This then begs the question: which Arduino? I have both a &lt;a href=&#34;http://arduino.cc/en/Main/ArduinoBoardUno&#34;&gt;Uno&lt;/a&gt; and a &lt;a href=&#34;http://arduino.cc/en/Main/ArduinoBoardDue&#34;&gt;Due&lt;/a&gt;. While I like the simplicity, support and cost of the Uno, the Due seems more future proof. My &lt;a href=&#34;http://www.adafruit.com/products/250&#34;&gt;ST7575&lt;/a&gt; already takes up over half the available pins on an Uno, and I haven&amp;rsquo;t even added any clocks, GPS, wakeup lights or the million or so other things this clock is going to do to it. Plus I&amp;rsquo;m sure the extra speed on the Due will come in handy. So Due it is.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
