@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>solder on miker.org</title>
+    <title>Solder on miker.org</title>
     <link>https://miker.org/tags/solder/</link>
-    <description>Recent content in solder on miker.org</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Solder on miker.org</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 12 Jan 2013 23:02:43 +0000</lastBuildDate><atom:link href="https://miker.org/tags/solder/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 12 Jan 2013 23:02:43 +0000</lastBuildDate>
+    <atom:link href="https://miker.org/tags/solder/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Learning to Solder</title>
       <link>https://miker.org/learning-to-solder/</link>
       <pubDate>Sat, 12 Jan 2013 23:02:43 +0000</pubDate>
-      
       <guid>https://miker.org/learning-to-solder/</guid>
-      <description>One of this things I knew I need to learn to build the world&amp;rsquo;s best alarm clock was how to solder. And I was right: one of the first things I needed to do was solder wires to the ST7565 display I got from adafruit so I could hook it up to the Arduino at the heart of the clock.
-Problem 1: I don&amp;rsquo;t have a soldering iron. Some quick Googling show that there are a lot of cheap soldering irons out there, and that you can probably get away with using them if you&amp;rsquo;re not doing a ton of work.</description>
+      <description>One of this things I knew I need to learn to build the world&amp;rsquo;s best alarm clock was how to solder. And I was right: one of the first things I needed to do was solder wires to the ST7565 display I got from adafruit so I could hook it up to the Arduino at the heart of the clock.&#xA;Problem 1: I don&amp;rsquo;t have a soldering iron. Some quick Googling show that there are a lot of cheap soldering irons out there, and that you can probably get away with using them if you&amp;rsquo;re not doing a ton of work.</description>
     </item>
-    
   </channel>
 </rss>

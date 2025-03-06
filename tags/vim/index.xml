@@ -1,31 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>vim on miker.org</title>
+    <title>Vim on miker.org</title>
     <link>https://miker.org/tags/vim/</link>
-    <description>Recent content in vim on miker.org</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Vim on miker.org</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 18 Feb 2019 23:07:37 +0000</lastBuildDate><atom:link href="https://miker.org/tags/vim/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 18 Feb 2019 23:07:37 +0000</lastBuildDate>
+    <atom:link href="https://miker.org/tags/vim/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Building a better keyboard</title>
       <link>https://miker.org/building-a-better-keyboard/</link>
       <pubDate>Mon, 18 Feb 2019 23:07:37 +0000</pubDate>
-      
       <guid>https://miker.org/building-a-better-keyboard/</guid>
-      <description>I want a better keyboard but my plea to the industry had no effect. Since no one would make one for me I built the keyboard myself. My main goals were:
- Standard split-QWERTY layout mirroring the Microsoft Natural Keyboards No number pad High quality mechanical switches Bluetooth and USB-C connections Plug and play (no-solder) microcontroller replacement  Layout Building a keyboard naturally starts with designing the key layout. I used the wonderful Keyboard Layout Editor to build a tweaked version of the classic Microsoft Natural Keyboard layout.</description>
+      <description>I want a better keyboard but my plea to the industry had no effect. Since no one would make one for me I built the keyboard myself. My main goals were:&#xA;Standard split-QWERTY layout mirroring the Microsoft Natural Keyboards No number pad High quality mechanical switches Bluetooth and USB-C connections Plug and play (no-solder) microcontroller replacement Layout Building a keyboard naturally starts with designing the key layout. I used the wonderful Keyboard Layout Editor to build a tweaked version of the classic Microsoft Natural Keyboard layout.</description>
     </item>
-    
     <item>
       <title>I Want A Better Keyboard</title>
       <link>https://miker.org/i-want-a-better-keyboard/</link>
       <pubDate>Wed, 28 Aug 2013 15:25:13 +0000</pubDate>
-      
       <guid>https://miker.org/i-want-a-better-keyboard/</guid>
-      <description>Over on Hacker News, there is a discussion about Atwood&amp;rsquo;s new keyboard. It looks nice, but it&amp;rsquo;s not my ultimate keyboard. So bored rich people out there, build me a better keyboard.
-   First, it needs to be ergonomic. Microsoft has pretty much perfected this, so let&amp;rsquo;s start by copying their natural keyboard design. The basic wave shape and key layout of the current natural keyboards is great, especially since they fixed the layout of the navigation (insert/delete) cluster.</description>
+      <description>Over on Hacker News, there is a discussion about Atwood&amp;rsquo;s new keyboard. It looks nice, but it&amp;rsquo;s not my ultimate keyboard. So bored rich people out there, build me a better keyboard.&#xA;First, it needs to be ergonomic. Microsoft has pretty much perfected this, so let&amp;rsquo;s start by copying their natural keyboard design. The basic wave shape and key layout of the current natural keyboards is great, especially since they fixed the layout of the navigation (insert/delete) cluster.</description>
     </item>
-    
   </channel>
 </rss>
