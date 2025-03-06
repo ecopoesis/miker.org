@@ -1,8 +1,10 @@
 baseURL = "https://miker.org/"
 languageCode = "en-us"
 title = "miker.org"
-theme = "mainroad"
-paginate = "7"
+theme = "roadster"
+
+[pagination]
+pagerSize = "7"
 
 [permalinks]
   posts = "/:slug/"
@@ -63,6 +65,6 @@ quality = 85
 
 [services.disqus]
   shortname = "" # Enable Disqus by entering your Disqus shortname
-  
+
 [services.googleAnalytics]
   ID = "" # Enable Google Analytics by entering your tracking ID
