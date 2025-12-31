@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Recipes on miker.org</title>
+    <link>https://miker.org/tags/recipes/</link>
+    <description>Recent content in Recipes on miker.org</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 23 Dec 2025 19:18:50 -0500</lastBuildDate>
+    <atom:link href="https://miker.org/tags/recipes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cheddar Bacon Ranch Wreath</title>
+      <link>https://miker.org/cheddar-bacon-ranch-wreath/</link>
+      <pubDate>Tue, 23 Dec 2025 19:18:50 -0500</pubDate>
+      <guid>https://miker.org/cheddar-bacon-ranch-wreath/</guid>
+      <description>I have invented the greatest thing ever: the bacon-cheddar-ranch cheese-wreath. It&amp;rsquo;s like a cheese-ball, but with more surface area for bacony goodness.</description>
+    </item>
+  </channel>
+</rss>
