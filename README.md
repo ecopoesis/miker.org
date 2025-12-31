@@ -5,7 +5,7 @@ A blog built with Hugo.
 ## New post
 
 ```bash
-hugo new posts/my-fancy-new-post
+hugo new posts/my-fancy-new-post.md
 ```
 
 ## Development
