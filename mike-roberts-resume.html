@@ -13,23 +13,22 @@
             box-sizing: border-box;
             margin: 0;
             padding: 0;
-            font-size: 15.5px;
+            font-size: 11.8px;
         }
 
-        #body {
-            width: 8.5in;
-            height: 11in;
+        @page {
+            size: letter;
+            margin: 0;
         }
 
         .page {
-            max-width: 8.5in;
-            max-height: 11in;
-            margin: 0.25in 0.25in 0.25in 0.25in;
+            width: 8.5in;
+            height: 11in;
+            padding: 0.32in 0.4in;
         }
 
         .row {
             display: flex;
-            width: 8in;
             margin: 0;
             padding: 0;
         }
@@ -40,177 +39,123 @@
         }
 
         .name {
-            flex: 100%;
             color: #fff;
-            padding: 0 9px 0 9px;
+            padding: 6px 9px 0 9px;
             font-family: 'Khula', sans-serif;
-            font-size: 21px;
+            font-size: 24px;
             font-weight: 800;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
+            line-height: 1.2;
         }
 
         .headline {
             background-color: #f0f0f0;
             color: #000;
-            padding: 0 9px 0 .9px;
+            padding: 3px 9px 2px 9px;
             font-family: 'Khula', sans-serif;
             font-weight: 700;
-            width: 100%;
         }
 
         .primary {
-            flex: 100%;
-            width: 100%;
-            align-items: center;
-            justify-content: center;     
-            font-size: 21px;
-            height: 34px;
-            margin: 3px 0px 0px 0px;
+            font-size: 17px;
+            line-height: 1.3;
         }
 
         .secondary {
-            flex: 100%;
-            width: 100%;
-            align-items: center;
-            justify-content: center; 
-            height: 29px;
-            font-size: 14px;
-            margin: -5px 0px 0px 0px;
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 1.3;
         }
 
         div.contact {
-            margin-top: -3px;
-            padding: 0px 9px 5px 9px;
-            background-color: rgb(47, 1, 107);
+            padding: 0 9px 5px 9px;
             color: #fff;
-            width: 100%;
-            align-items: center;
-            justify-content: center;
+            flex-wrap: wrap;
         }
 
-        span.contact {
+        span.contact, span.contact a {
             padding-right: 10px;
             font-family: 'Khula', sans-serif;
-            font-size: 12px;
-            display: inline;
+            font-size: 11.5px;
             font-weight: 600;
-            height: 18px;
-            margin-inline: 2px;
+            text-decoration: none;
+            color: #fff;
         }
 
         span.contact a {
-            padding-right: 10px;
-            font-family: 'Khula', sans-serif;
-            font-size: 12px;
-            display: inline;
-            font-weight: 600;
-            height: 18px;
-            text-decoration: none;
-            color: #fff;
             padding: 0;
         }
 
         .contact-icons {
-            filter: invert(100%) sepia(0%) saturate(1%) hue-rotate(348deg) brightness(102%) contrast(100%);
-            height: 15px;
-            width: 15px;
-            z-index: 50;
-            margin-bottom: -3px;
+            filter: invert(100%);
+            height: 12px;
+            width: 12px;
+            margin-bottom: -2px;
         }
 
-        p {
-            margin: .2em 0 1em 0;
+        .summary p {
+            font-family: 'Roboto Serif', serif;
+            margin: 5px 5px 4px 5px;
+            line-height: 1.32;
         }
 
         .section-header {
-            flex: 100%;
-            width: 100%;
             background-color: rgb(47, 1, 107);
             color: #fff;
             font-family: "Tenor Sans", sans-serif;
-            font-size: 19px;
-            margin: 2px 0 2px 0;
-            height: 28px;
-            align-items: center;
-            justify-content: center;
+            font-size: 14px;
+            letter-spacing: 1px;
+            margin: 6px 0 2px 0;
+            padding: 2px 0 1px 0;
             text-align: center;
             text-transform: uppercase;
-            padding: 3px 0 0 0;
         }
 
         .job-header {
+            display: flex;
+            justify-content: space-between;
             background-color: #f0f0f0;
             color: #000;
             font-family: 'Roboto Serif', serif;
-            font-weight: 500;
-            font-size: 16px;
-            height: 23px;
-            flex: 100%;
-            width: 100%;
             border-bottom: rgb(47, 1, 107) 2px solid;
-            margin-top: 10px;
+            padding: 1px 5px 0 5px;
+            margin-top: 6px;
         }
 
-        .summary {
-            font-family: 'Roboto Serif', serif;
-            width: 100%;
-            margin: 5px;
+        .job-header * {
+            font-size: 13px;
         }
 
         .content {
             font-family: 'Roboto Serif', serif;
-            width: 100%;
-            margin: 5px;
-            list-style-position: inside;
+            margin: 0 5px;
+            line-height: 1.28;
         }
 
         .sub-content {
-            margin: 5px 0 5px 0;
+            margin: 3px 0;
         }
 
         .sub-header {
-            margin: 10px 5px 0 5px;
+            margin: 3px 0 1px 0;
             font-weight: bold;
             font-style: italic;
         }
 
-        li.spaced {
-            margin: 5px 0 0 15px;
-            list-style-position: outside;
+        ul {
+            margin: 0 0 0 15px;
         }
 
-        ul.spaced {
-            margin: 5px 0 0 0;
+        li {
+            margin: 2px 0 0 0;
         }
 
-        ul.sub {
-            list-style-position: outside;
-            margin-left: 25px;
+        .faq span {
+            white-space: nowrap;
+            margin-right: 14px;
         }
 
-        li.sub {
-            margin: 5px 0 0 -12px;
-        }
-
-        .unbreakable {
-            page-break-inside: avoid;
-        }
-
-        @page {
-            @top-center {
-                font-family: 'Roboto Serif', serif;
-                font-size: 10px;
-                color: darkgrey;
-                content: 'Mike Roberts | Page ' counter(page);
-            }
-        }
-
-        @page:first { 
-            @top-center {
-                content: '';
-            }
+        .faq b {
+            color: rgb(47, 1, 107);
         }
     </style>
 </head>
@@ -245,165 +190,102 @@
 
         <div class="headline">
             <div class="row primary">
-                Software Engineering & Architecture
+                Engineering Leadership
             </div>
             <div class="row secondary">
-                Software Design & Development | People Leadership | Product Architecture & Strategy
+                Developer Velocity | Agentic SDLC | Platform Architecture | People Leadership | Strategy
             </div>
         </div>
 
         <div class="summary">
             <p>
-                I am a technology leader with over two decades of experience building and scaling cloud platforms, 
-                leading high-performing engineering teams, and driving strategic software initiatives. I have a strong 
-                track record of architecting scalable, secure, and resilient cloud solutions, with expertise in AWS, 
-                distributed systems, and data streaming. Passionate about innovation and execution, I excel at fostering 
-                cross-functional collaboration, mentoring talent, and driving operational excellence. I thrive in fast-paced 
-                environments, transforming complex systems into efficient, high-impact solutions that align technology with
-                business goals.
+                I'm an engineering leader who still ships code every day, and I think every engineering leader should.
+                For two decades my focus has been <i>how</i> we ship, not just <i>what</i>: CI/CD, build systems,
+                platforms, and now fully agentic development. I've pivoted a business into an entirely new product in nine
+                months, rebuilt how a public company writes software, and grown a recommendation engine into a quarter of
+                company revenue. I like hard problems, honest conversations, and winning.
             </p>
         </div>
-        <div class="section-header">Leadership & Technology Skills</div>
+
+        <div class="section-header">Skills</div>
         <div class="content">
             <div class="sub-content">
-                <b>Leadership</b>: System Design, Architecture, Strategic Planning, Communication, Scrum, Agile Methodology, 
-                People Management, Mentoring, Hiring, Performance Management, Process Definition, Cross-functional Collaboration
+                <b>Leadership</b>: Strategy, Org Design, Hiring, Mentoring, Performance Management, Process Design, Partner Management
             </div>
             <div class="sub-content">
-                <b>Cloud</b>: AWS, Dynamo, EC2, ECS / Fargate, EKS, ELB, Kinesis, Lambda, RDS, S3, SNS / SQS, Terraform
+                <b>AI &amp; Developer Tooling</b>: Agentic Workflows, Claude Code, LLM-driven SDLC, CI/CD, Gradle, Terraform, Recommendation Models
             </div>
             <div class="sub-content">
-                <b>Backend</b>: Kotlin, Scala, Java, Ruby, Python, GraphQL, MySQL, Postgres, Redis, Kafka, Maven, Gradle
+                <b>Platform</b>: Kotlin, Java, Scala, Ruby, Python, GraphQL, Kafka, Postgres, MySQL, Redis, AWS
             </div>
         </div>
 
-        <div class="section-header">Professional Experience</div>
-        <div class="job-header"><b>CarGurus</b> &mdash; Cambridge, MA (April 2021 - present)</div>
+        <div class="section-header">Experience</div>
+        <div class="job-header"><span><b>CarGurus</b> &mdash; Cambridge, MA</span><span>April 2021 &ndash; present</span></div>
         <div class="content">
-            <div class="sub-header">Senior Manager of Algorithmic Traffic Acquisition</div>
+            <div class="sub-header">Senior Manager, Algorithmic Traffic Acquisition</div>
             <ul>
-                <li class="spaced unbreakable"><b>Leadership</b> 
-                    <ul class="sub">
-                        <li class="sub">Managed the recommendation and content teams within ATA.</li>
-                        <li class="sub">Interviewed all department full-time, contractor, co-op, and intern candidates.</li>
-                        <li class="sub">Built feature roadmaps in coordination with product managers in other parts of CarGurus.</li>
-                        <li class="sub">Proposed and implemented a cross-company "user stitching service" to bring together formerly siloed data sources, enabling improved personalization algorithms across CarGurus' properties.</li>
-                    </ul>  
-                </li>
-                <li class="spaced unbreakable"><b>Technical</b>
-                    <ul class="sub">
-                        <li class="sub">Architected the standard Kotlin platform and framework used by ATA.</li>
-                        <li class="sub">Designed and managed CI/CD system, reducing feature lead time from several days to 15 minutes.</li>
-                        <li class="sub">Developed custom auto-scaling algorithms to leverage AWS reservations into $100k monthly savings.</li>
-                        <li class="sub">Redesigned the recommendation engine's AWS infrastructure to guarantee a 50ms SLA.</li>
-                        <li class="sub">Spearheaded architectural patterns implementation, enhancing system scalability and maintainability, resulting in 60% improved performance on the recommendation engine.</li>
-                    </ul>   
-                </li>
-                <li class="spaced unbreakable"><b>Partnership Management</b>
-                    <ul class="sub">
-                        <li class="sub">Managed ATA's partner relationships with external advertisers.</li>
-                        <li class="sub">Reduced partner onboarding from 6+ months to 30 days.</li>
-                        <li class="sub">Managed the procurement process for software vendors.</li>
-                    </ul> 
-                </li>
-                <li class="spaced unbreakable"><b>Business Impact</b> 
-                    <ul class="sub">
-                        <li class="sub">Grew recommendations to account for 25% of CarGurus' overall revenue.</li>
-                        <li class="sub">Maintained paid channels revenue share at 40% while reducing costs and increasing overall lead value through increased advertising efficiency.</li>
-                    </ul> 
-                </li>
+                <li>Invented and am the primary author of <b>Mauve</b>, CarGurus' fully agentic SDLC: Jira ticket to pull request with no human needed. Building it changed how all of CarGurus develops software.</li>
+                <li>Hands-on with AI tools daily; personally shipped multiple new recommendation models to production in 2026.</li>
+                <li>Grew recommendations to 25% of CarGurus' total revenue while leading the recommendation and content teams.</li>
+                <li>Built ATA's CI/CD system and standard Kotlin platform, cutting feature lead time from days to 15 minutes.</li>
+                <li>Redesigned recommendation infrastructure to hold a 50ms SLA and improve engine performance 60%; built custom AWS auto-scaling that saved $100k monthly.</li>
+                <li>Proposed and built a cross-company user stitching service, unifying siloed data for personalization.</li>
+                <li>Cut advertising partner onboarding from 6+ months to 30 days; held paid channels at 40% of revenue while lowering cost.</li>
             </ul>
         </div>
 
-        <div class="unbreakable">
-            <div class="job-header"><b>Indigo Agriculture</b> &mdash; Charlestown, MA (June 2019 - April 2021)</div>
-            <div class="content">
-                <div class="sub-header">Principal Engineer (Manager and Architect), Enterprise Services</div>
-                <ul class="spaced">
-                    <li class="spaced">Managed Indigo's back office settlements team: 3 engineers.</li>
-                    <li class="spaced">Developed the first high-availability, 24/7 uptime services at Indigo, instituting off-hours coverage plans and runbooks.</li> 
-                    <li class="spaced">Designed and implemented Indigo's enterprise service bus, enabling asynchronous connections between dozens of microservices.</li> 
-                    <li class="spaced">Architected Indigo's core event-sourcing system, enabling fault tolerant transactions on the grain trading marketplace.</li>
-                </ul>
+        <div class="job-header"><span><b>Indigo Agriculture</b> &mdash; Charlestown, MA</span><span>June 2019 &ndash; April 2021</span></div>
+        <div class="content">
+            <div class="sub-header">Principal Engineer (Manager &amp; Architect), Enterprise Services</div>
+            <ul>
+                <li>Led the back office settlements team and shipped Indigo's first high-availability, 24/7 services, with on-call plans and runbooks.</li>
+                <li>Architected the event-sourcing core of the grain marketplace and the service bus connecting dozens of microservices.</li>
+            </ul>
+        </div>
+
+        <div class="job-header"><span><b>Salsify</b> &mdash; Boston, MA</span><span>December 2016 &ndash; June 2019</span></div>
+        <div class="content">
+            <div class="sub-header">Principal Engineer (Manager), Platform Services</div>
+            <ul>
+                
+                <li>Led the platform team; built a fair, multi-tenant job system running tens of millions of jobs daily, and Salsify's Kafka event bus and GraphQL framework.</li>
+            </ul>
+        </div>
+
+        <div class="job-header"><span><b>Leaf Holdings</b> &mdash; Cambridge, MA</span><span>November 2013 &ndash; May 2015</span></div>
+        <div class="content">
+            <div class="sub-header">Software Engineering Manager (Director), Platform</div>
+            <ul>
+                <li>Led the Android and platform teams (3 managers, 18 engineers); hired dozens of engineers, plus a remote contract team in Istanbul.</li>
+                <li>Took a pre-funding proof of concept to a production system serving thousands of restaurants; designed a Paxos-based data store spanning Android tablets and AWS.</li>
+            </ul>
+        </div>
+
+        <div class="job-header"><span><b>Smarter Travel Media</b> (TripAdvisor) &mdash; Charlestown, MA</span><span>April 2009 &ndash; April 2013</span></div>
+        <div class="content">
+            <div class="sub-header">Software Engineering Manager (Director), Platform</div>
+            <ul>
+                <li>Led the pivot from an advertising network (BBDN) to <b>Tingo.com</b>, a ground-up hotel OTA, in nine months: real consumers, SEO, SEM, payments, customer support, and back office.</li>
+                <li>Built the Tingo team (12 engineers) and microservice platform, later reused across TripAdvisor sites; CI and TDD kept uptime above 99.9%. Ran STM's architecture review board.</li>
+            </ul>
+        </div>
+
+        <div class="section-header">Education</div>
+        <div class="content">
+            <div class="sub-content">
+                <b>Worcester Polytechnic Institute</b> &mdash; B.S. Computer Science and B.S. Theatre
             </div>
         </div>
 
-       
-        <div class="unbreakable">
-            <div class="job-header"><b>Salsify</b> &mdash; Boston, MA (December 2016 - June 2019)</div>
-            <div class="content">
-                <div class="sub-header">Principal Engineer (Manager), Platform Services</div>
-                <ul class="spaced">
-                    <li class="spaced">Developed a new asynchronous job system to handle 10s of millions of jobs daily, fairly and quickly across Salsify's SaaS customer base.</li>
-                    <li class="spaced">Built Salsify's GraphQL framework and converted the first 4 microservices from REST APIs to GraphQL.</li>
-                    <li class="spaced">Productionized Salsify's asynchronous, microservice event bus on Kafka, enabling replay tolerant event sourcing at a millions of daily events scale.</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="unbreakable">
-            <div class="job-header"><b>Leaf Holdings</b> &mdash; Cambridge, MA (Novemeber 2013 - May 2015)</div>
-            <div class="content">
-                <div class="sub-header">Software Engineering Manager (Director), Platform</div>
-                <ul class="spaced">
-                    <li class="spaced">Led the Android and platform teams: 3 managers and 18 engineers.</li>
-                    <li class="spaced">Developed Leaf's pre-funding proof-of-concept into a production system serving 1000s of SaaS restaurant customers.</li>
-                    <li class="spaced">Hired dozens of local and remote engineers.</li> 
-                    <li class="spaced">Designed and implemented a novel, Paxos-based distributed, eventually consistent data-store co-homed on Android tablets and AWS.</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="unbreakable">
-            <div class="job-header"><b>Smarter Travel Media</b> &mdash; Charlestown, MA (April 2009 - April 2013)</div>
-            <div class="content">
-                <div class="sub-header">Software Engineering Manager (Director), Platform</div>
-                <ul class="spaced">
-                    <li class="spaced">Built Tingo.com, a new, ground-up online travel agency, managing 12 engineers.</li>
-                    <li class="spaced">Ensured quality by implementing continuous integration and test-driven development processes, leading to 99.9 %+ uptime.</li>
-                    <li class="spaced">Worked closely with customer support and product management teams to ensure the perfect vacation for 10s of thousands of customers.</li>
-                    <li class="spaced">Designed the scalable Tingo microservice platform and components to power other TripAdvisor sites' infrastructure.</li> 
-                    <li class="spaced">Ran STM's architectural review board, vetting technology decisions across all of STM's departments.</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="unbreakable">
-            <div class="section-header">Education</div>
-            <div class="job-header"><b>Worcester Polytechnic Institute</b> &mdash; Worcester, MA (1997 - 2002)</div>
-            <div class="content">
-                <div class="sub-content">
-                    <div class="sub-header">Bachelor of Science, Computer Science</div>
-                    <ul class="spaced">
-                        <li class="spaced"><b>Major Qualifying Project</b>: Testing clustered Apache web server performance</li>
-                        <li class="spaced"><b>Interactive Qualifying Project</b>: Shakespeare on display</li>
-                    </ul>   
-                    <div class="sub-header">Bachelor of Science, Theatre</div>
-                    <ul class="spaced">
-                        <li class="spaced"><b>Major Qualifying Project</b>: Virtual reality engine investigation</li>
-                    </ul>   
-                </div>
-            </div>
-        </div>
-
-        <div class="unbreakable">
-            <div class="section-header">FAQ</div>
-            <div class="content">
-                <div class="sub-content">
-                    <b>Shell?</b>  zsh
-                </div>
-                <div class="sub-content">
-                    <b>Vim or Emacs</b>  Vim
-                </div>
-                <div class="sub-content">
-                    <b>Kanban or Scrum?</b>  Kanban, but every team is different
-                </div>
-                <div class="sub-content">
-                    <b>Star Trek or Star Wars?</b>  Star Trek
-                </div>
-                <div class="sub-content">
-                    <b>Kirk or Picard?</b>  Janeway
-                </div>
+        <div class="section-header">FAQ</div>
+        <div class="content faq">
+            <div class="sub-content">
+                <span><b>Shell?</b> zsh</span>
+                <span><b>Vim or Emacs?</b> Vim</span>
+                <span><b>Kanban or Scrum?</b> Kanban, but every team is different</span>
+                <span><b>Star Trek or Star Wars?</b> Star Trek</span>
+                <span><b>Kirk or Picard?</b> Janeway</span>
             </div>
         </div>
     </div>
